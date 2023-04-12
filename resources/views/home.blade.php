@@ -1,4 +1,4 @@
-@extends('layouts.layoutHome.blade')
+@extends('layouts.layoutHome')
  
 @section('title', 'Page Title')
  
