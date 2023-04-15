@@ -13,4 +13,8 @@
     
     <div id="igsDialog"></div>
     
+    <script>
+        igsMessage('Loading...');
+    </script>
+    
 @stop
