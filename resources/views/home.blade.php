@@ -10,7 +10,7 @@
  
 @section('content')
 
-    <script src='../resources/js/slm.js'></script>
+    <script src='resources/js/slm.js'></script>
 
     <p>This is my body content.</p>
     
