@@ -1,0 +1,568 @@
+/* 
+    Created on : Apr 12, 2023, 4:36:19 PM
+    Author     : garymize
+*/
+
+
+body,table,td,th,input,textarea,select
+{
+    /*font-family: Verdana sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+pre
+{
+    color: navy;
+    font-family: monospace,courier new, consolas;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h1
+{
+    background-color: #eeeeee;
+    color: navy;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;    
+}
+h2
+{
+    color: gray;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 0pt;
+    margin-top: 0pt;
+    padding-bottom: 0pt;
+    padding-top: 0pt;
+}
+h3
+{
+    color: steelblue;
+    font-size: 11.25pt;
+    font-weight: bold;
+    margin-bottom: 0pt;
+    margin-top: 0pt;
+    padding-bottom: 0pt;
+    padding-top: 0pt;
+}
+td
+{
+/*    vertical-align: top;
+    padding: 4px;*/
+}
+table.blackborder>tbody td
+{
+	border: solid 1px lightgrey;	
+}
+th
+{
+	border-collapse: collapse;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*a 
+{ color:#003399; }
+
+a:visited
+{
+	color: maroon;
+}*/
+/*a:hover 
+{ color: #D39A24;}  #D39A24 amber - was red*/
+
+/*small, .smalltext
+{
+    font-size: 8.25pt;
+    font-weight: normal;
+}*/
+
+
+hr 
+{ 
+    color: lightgray; background: lightgray; border: 0; height:1px;
+}
+	
+ul 
+{
+    margin-bottom: 2px;
+    margin-top: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}	
+li
+{
+	padding-top: 2px;
+	padding-bottom: 0;
+}
+img
+{
+	border: 0px;
+}
+legend
+{
+    text-align: center;
+	font-weight: bold;
+	background: #DE8079;
+	color: White;
+	padding: 2px 5px;
+	margin: 3px;
+	border: solid 1px #800000;
+	text-align: left;
+}    
+.fieldsetpadding
+{
+	padding: 15px;
+}
+fieldset
+{
+	border: solid 1px darkgrey;	   
+	margin-bottom: 5px;
+	padding: 10px;
+}
+
+input[type=text], input[type=password], select 
+{    	    	
+	background-color: #eeeeee;    	
+	/*background-color: whitesmoke;*/    	
+	border: solid 1px lightgray;
+	border-style:solid;
+	padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        color: #535353;
+        height: 19px;
+	
+}
+input[type=text]:focus,input[type=radio]:focus, input[type=password]:focus,select:focus
+{
+        /*background-color: cornsilk;*/
+        /*background-color:  palegoldenrod;*/
+        /*background-color:  rgb(243, 238, 223);*/
+        /*background-color:  whitesmoke;*/
+        background-color:  rgb(250,250,250);
+}
+input[type=button], input[type=submit]
+{
+	font-size: 8pt;
+}
+/*input[type=text], input[type=password], select 
+{    	    	
+	background-color: #F5F7FA;    	
+	border: solid 1px lightsteelblue;
+	border-style:solid;
+	padding: 2px;
+	
+}
+input[type=text]:focus, input[type=password]:focus,select:focus
+{
+    background-color: cornsilk;
+}
+input[type=button], input[type=submit]
+{
+	font-size: 8pt;
+}*/
+.blackborder
+{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #003399;
+	background: white;
+	text-align: left;
+}
+
+.bigtext
+{
+	font-size: 1.8em;
+	font-weight: bold;
+	color: Navy;
+}
+.rightalign
+{
+	float: right;
+}
+
+.footer
+{
+    margin: 10px 0px;
+    border-top: solid 1px navy; 
+    font-size: 8pt;   
+    padding: 5px 10px;
+}
+.submitbutton
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0px;
+	font-weight: bold;
+	height: 35px;
+	width: 200px;
+	background: url('images/submitbutton.gif');
+	color: lemonchiffon;
+}
+.submitbutton:hover { background: url('images/submitbuttonhover.gif');
+} 
+.submitbutton:active { background: url('images/submitbuttonpressed.gif');
+}
+
+.smallbutton
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0px;
+	height: 22px;
+	width: 90px;
+	font-size: 8pt;
+	color: navy;
+	background: url('images/smallbutton.gif');
+}
+.smallbutton:hover { background: url('images/smallbuttonhover.gif');
+}
+.smallbutton:active { background: url('images/smallbuttonpressed.gif');
+}
+
+
+
+.gridheader, .gridheaderbig, .gridheaderleft, .gridheaderright
+{	
+	padding: 4px 4px 4px 4px;
+	background:  #003399 url(images/vertgradient.png) repeat-x;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	color: khaki;
+}
+.gridheader a, .gridheaderbig a
+{
+	color: cornsilk;
+	text-decoration: none;
+}
+.gridheaderleft
+{
+	text-align: left;
+}
+.gridheaderright
+{
+	text-align: right;
+}
+.gridheaderbig
+{	
+	font-size: 135%;
+}
+.gridnormal
+{
+	background-color: #eeeeee;
+}
+.gridalternate
+{
+	background-color:#b5c7d6;
+}
+.gridhighlight
+{
+	background-image: url(images/LightOrangeGradient.png);
+	background-repeat: repeat-x;
+	background-color: White;	
+	cursor:pointer;
+}
+
+
+
+.errormessage
+{
+	font-weight: bold;
+	color: maroon;
+}
+.errordisplay
+{	
+	font-weight: normal;
+	color: maroon !important;
+	background-color:cornsilk !important;
+	border: solid 2px maroon !important;	
+	padding: 6px 5px 8px 10px;
+	line-height: 1.5;
+	margin: 7px 0;
+}
+.errordisplay hr
+{
+	color: maroon;
+}
+.errorhighlight
+{
+    background-color: #FCEBF2 !important;
+    border-color: Red !important;
+    border-width: 2px !important;  
+}
+
+
+.containercontent
+{
+	padding: 20px;	
+}
+
+.contentcontainer
+{
+  margin: 15px;
+  padding: 20px;
+  background: white;       
+  border-top: solid 1px silver;
+  border-left: solid 1px silver;
+  border-right: solid 2px #535353 ;
+  border-bottom: solid 2px #535353;
+  
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -opera-border-radius: 10px;
+  
+  box-shadow: 3px 3px 5px #535353  ;
+  -moz-box-shadow: #535353  2px 2px 3px;
+  -webkit-box-shadow: #535353 2px 2px 3px;     
+}
+
+.boxshadow 
+{
+  -moz-box-shadow: 3px 3px 30px #535353;
+  -webkit-box-shadow: 3px 3px 30px #535353;       
+  box-shadow: 3px 3px 30px #535353;
+}
+.roundbox
+{  
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px;  
+  border-radius: 6px 6px 6px 6px;
+  behavior: url(pie.htc)
+}
+.roundbox-top
+{    
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;    
+    border-radius: 4px 4px 0 0;
+    behavior: url(pie.htc)
+}
+.roundbox-bottom
+{    
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    behavior: url(pie.htc)
+}
+
+.dispayNone{
+    display: none;
+}
+
+.dialog
+{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -225px;
+  margin-top: -100px;
+  background: White;
+  overflow: hidden;
+  border: solid 1px steelblue;    
+  -moz-border-radius: 6px 6px 4px 4px;
+  -webkit-border-radius: 6px 6px 4px 4px;
+  border-radius: 6px 6px 3px 3px;
+  behavior: url(pie.htc)      
+}
+.dialog-header
+{	    
+    background:  #003399 url(images/dialogheader.png) repeat-x;
+	text-align: left;
+	color: cornsilk;
+	padding: 5px;	
+	padding-left: 10px;
+	font-size: 1.02em;
+	font-weight: bold;	
+	position: relative;
+    -moz-border-radius: 4px 4px 0px 0px;   
+    -webkit-border-radius: 4px 4px 0px 0px;       
+    border-radius: 4px 4px 0px 0px;       
+    xbehavior: url(pie.htc)
+}
+.dialog-top
+{
+    -moz-border-radius: 4px 4px 0px 0px;   
+    -webkit-border-radius: 4px 4px 0px 0px;       
+    border-radius: 4px 4px 0px 0px;       
+      behavior: url(pie.htc)
+}
+.dialog-bottom
+{
+    -moz-border-radius: 0 0 3px 3px;   
+    -webkit-border-radius: 0 0 3px 3px;   
+    border-radius: 0 0 3px 3px;   
+      behavior: url(pie.htc)
+}
+.dialog-content
+{
+	padding: 15px;
+}
+.dialog-statusbar, .dialog-toolbar
+{
+	background: #eeeeee;
+	background-image: url(images/dialogstrip.png);
+	background-repeat: repeat-x;
+	padding: 5px;
+	padding-left: 10px;
+	border-top: solid 1px silver;
+	border-bottom: solid 1px silver;
+	font-size: 0.8em;
+}
+.dialog-statusbar
+{
+    -moz-border-radius: 0 0 3px 3px;   
+    -webkit-border-radius: 0 0 3px 3px;   
+    border-radius: 0 0 3px 3px;   
+	padding-right: 10px;
+	behavior: url(pie.htc)
+}
+.closebox
+{
+	position: absolute;    	
+	right: 2px;
+	top: 2px;
+	background-image: url(images/close.gif);
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;    	
+	opacity: 0.60;
+	filter: alpha(opacity="80");
+} 
+.closebox:hover 
+{
+	xbackground-color: white;
+	opacity: 1;
+	filter: alpha(opacity="100");
+}
+
+.toolbarcontainer  
+{
+	background:#eeeeee;
+	background-image: url(images/dialogstrip.png);
+	background-repeat: repeat-x;
+	border: solid 1px silver;
+	vertical-align: top;
+	padding: 5px; 
+}
+.statusbar
+{
+	position: fixed;
+	bottom: 5px;
+	left: 0px;
+	right: 0px;
+	height: 16px;	
+	padding: 5px;	
+	background: black;
+	color: white;	
+	border: solid 1px lightgray;	
+	opacity: .70;	
+	filter: alpha(opacity="70");
+	z-index: 200;
+	overflow: hidden;
+	overflow-y: auto; 
+}
+.statusbarhighlight
+{
+	font-weight: bold;
+	background-color: khaki;
+	color: Maroon;
+	border: solid 1px silver;
+}
+.statusbarclose
+{
+	position: absolute;
+	right: 10px; 
+	top: 2px;
+	color:red;
+	font-size: 12pt;
+	font-weight: bold;
+	cursor: pointer;
+}
+.hoverbutton  
+{
+	text-decoration:none;		
+	padding: 4px; 	
+	font-size: 8pt; 		
+	border: solid 1px transparent; 	
+}
+.hoverbutton:hover
+{	
+	background: white url('images/dialoghighlight.png'); 
+	border:  outset 1px silver; 
+	
+	cursor: hand;
+}     
+.hoverbutton a
+{
+	text-decoration: none;
+}
+.tabbutton, .selectedtabbutton
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0px;
+	font-size: 8pt;
+	background: url('images/tabnormal.gif') no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	cursor: hand;
+	color: darkblue;
+	width: 120px;
+	margin: 0px;
+	padding:0px;
+}
+.tabbutton:hover
+{
+	background: url('images/tabhover.gif') no-repeat;
+}
+.selectedtabbutton 
+{ 
+	font-weight: bold; 
+	color: white; 
+	background:url('images/tabselected.gif') no-repeat;
+	cursor:default;
+}
+.tabstripseparator
+{
+    background: navy;
+}
+.tabpage
+{
+    padding: 10px;
+    border: solid 1px navy;
+    height: 200px;
+    min-height: 200px;
+    width: 500px;
+    min-width: 500px;
+}
+.smallprogress,.smallprogressright
+{
+	width: 16px;
+	height: 16px;
+	background-image: url(images/loading_small.gif);
+	background-repeat: no-repeat;			
+	display: none;	
+}
+.smallprogressright { float: right }
+.notebox
+{
+	background: lightsteelblue;
+	padding: 10px;
+	border: solid 1px navy;
+	margin: 5px 40px 15px 30px;
+	font-size: 8pt;
+}
+.descriptionheader
+{
+	background: khaki;
+	color: black;
+	font-size: 8pt;
+	text-align: left;
+	padding: 10px;
+	border-top: solid 1px silver;
+}

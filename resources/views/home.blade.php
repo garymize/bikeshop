@@ -10,4 +10,7 @@
  
 @section('content')
     <p>This is my body content.</p>
+    
+    <div id="igsDialog"></div>
+    
 @stop
