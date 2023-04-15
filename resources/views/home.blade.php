@@ -9,6 +9,9 @@
 @stop
  
 @section('content')
+
+    <script src='slm.js'></script>
+
     <p>This is my body content.</p>
     
     <div id="igsDialog"></div>
