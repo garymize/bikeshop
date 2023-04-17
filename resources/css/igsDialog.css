@@ -370,7 +370,7 @@ input[type=button], input[type=submit]
 }
 .dialog-header
 {	    
-    background:  #003399 url(/images/dialogheader.png) repeat-x;
+    background:  #003399 url(../images/dialogheader.png) repeat-x;
 	text-align: left;
 	color: cornsilk;
 	padding: 5px;	
