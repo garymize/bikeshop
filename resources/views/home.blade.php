@@ -20,6 +20,6 @@
     </script>
     
     <button class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer button-blue" onClick="igsMessage('Loading...');" style="margin-top: 75px;"> Show Message</button><br>
-    <button class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="removeIGSMessage();"><img src="/images/ico-chat.svg"> Clear Message</button>
+    <button class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="removeIGSMessage();"><img src="https://sttc.searchingforsingles.com/ow_static/plugins/skcpv/img/ico-chat.svg"> Clear Message</button>
     
 @stop
