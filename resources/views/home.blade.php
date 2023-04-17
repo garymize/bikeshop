@@ -16,6 +16,7 @@
     
     <script>
         igsMessage('Loading...');
+        setTimeout(removeIGSMessage();,6000);
     </script>
     
 @stop
