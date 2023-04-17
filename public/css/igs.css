@@ -1119,7 +1119,7 @@ button{
 
 .IGSbutton:hover{
     background-color: white;
-    border: thin solid gray;
+    border: thick solid white;
 }
 
 .gradientButton{
