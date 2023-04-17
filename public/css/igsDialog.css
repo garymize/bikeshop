@@ -404,7 +404,7 @@ input[type=button], input[type=submit]
 .dialog-statusbar, .dialog-toolbar
 {
 	background: #eeeeee;
-	background-image: url(images/dialogstrip.png);
+	background-image: url(/images/dialogstrip.png);
 	background-repeat: repeat-x;
 	padding: 5px;
 	padding-left: 10px;
@@ -443,7 +443,7 @@ input[type=button], input[type=submit]
 .toolbarcontainer  
 {
 	background:#eeeeee;
-	background-image: url(images/dialogstrip.png);
+	background-image: url(/images/dialogstrip.png);
 	background-repeat: repeat-x;
 	border: solid 1px silver;
 	vertical-align: top;
