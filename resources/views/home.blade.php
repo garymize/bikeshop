@@ -16,7 +16,9 @@
     
     <script>
         igsMessage('Loading...');
-        setTimeout(removeIGSMessage,6000);
+        // setTimeout(removeIGSMessage,6000);
     </script>
+    
+    <button class="IGSbutton menuPointer" onClick="removeIGSMessage();" style="text-decoration: none; margin-top: 15px; margin-bottom: 15px; max-height: 21px;">Clear Message</button>
     
 @stop
