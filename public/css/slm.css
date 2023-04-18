@@ -1756,6 +1756,40 @@ button{
     border: thin solid rgb(220,220,220);
 }
 
+.IGSbutton-green{
+    position: absolute;
+    cursor: pointer;
+    color: rgba(40,40,40,0.7);
+    box-shadow: 0px 0px 1px 1px gray;
+    border: 0px solid #3cca39;
+    font-size: small;
+    font-weight: normal;
+    font-family: arial;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    background-image: linear-gradient(to bottom, white, #dfdddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f5f5, endColorstr=#dfdddd);
+    /* background: -webkit-linear-gradient(top, white, #3cca39); */
+    background: linear-gradient(to bottom, #3cca39 0%, #2f8236 100%);
+    text-align: center  
+}
+
+.IGSbutton-standard{
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* max-height: 21px; */
+    width: 290px;
+    height: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 40px;
+}
+
 hr{
     color: rgba(10,10,10,0.1);
     border-color: rgba(10,10,10,0.0);
