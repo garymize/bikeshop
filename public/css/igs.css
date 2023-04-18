@@ -143,7 +143,8 @@ html, body {
 	/*background:#FFFFFF;*/
         /*background-color: #707038;*/
         /*background-color: midnightblue;*/
-        background-color: lightslategray;
+        // background-color: lightslategray;
+        background-color: RGB(247,247,247);
 }
 
 .wrapper{
