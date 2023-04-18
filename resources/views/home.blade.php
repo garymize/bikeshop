@@ -23,8 +23,8 @@
         // setTimeout(removeIGSMessage,6000);
     </script>
     
-    <button class="IGSbutton IGSbutton-green menuPointer button-blue" onClick="igsMessage('Loading...');" style="margin-top: 75px;"> Show Message</button><br>
-    <button class="IGSbutton IGSbutton-green menuPointer" onClick="removeIGSMessage();">Clear Message</button>
+    <button class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer button-blue" onClick="igsMessage('Loading...');" style="margin-top: 75px;"> Show Message</button><br>
+    <button class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="removeIGSMessage();">Clear Message</button>
 
 </body>
     
