@@ -1737,15 +1737,15 @@ button{
 .listButtonContainer{width: 70px;height: 30px;text-align: center;vertical-align: middle;display: table-cell;padding-left:20px;}
 
 .IGSbutton:enabled{
-    position: relative;
-    cursor: pointer; color: rgba(40,40,40,0.8); box-shadow: 0px 0px 1px 1px gray; border: 0px solid gray; font-size: small; font-weight: normal; font-family: arial; padding-top: 2px; padding-bottom: 2px; padding-left: 8px; padding-right: 8px; border-radius: 4px;
-    background-image: linear-gradient(to bottom, white, #dfdddd);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f5f5, endColorstr=#dfdddd);
-    background: -webkit-linear-gradient(top, white, #dfdddd);
+    /*position: relative; */
+    /*cursor: pointer; color: rgba(40,40,40,0.8); box-shadow: 0px 0px 1px 1px gray; border: 0px solid gray; font-size: small; font-weight: normal; font-family: arial; padding-top: 2px; padding-bottom: 2px; padding-left: 8px; padding-right: 8px; border-radius: 4px; */
+    /*background-image: linear-gradient(to bottom, white, #dfdddd);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f5f5, endColorstr=#dfdddd); */
+    /*background: -webkit-linear-gradient(top, white, #dfdddd); */
 }
 
 .IGSbutton:disabled{
-    position: relative;
-    cursor: default;
+    /*position: relative;*/
+    /*cursor: default;*/
     color: #888; box-shadow: 0px 0px 0px 0px gray; border: 0px solid gray; font-size: small; font-weight: normal; font-family: arial; padding-top: 2px; padding-bottom: 2px; padding-left: 8px; padding-right: 8px; border-radius: 4px;
     background-image: linear-gradient(to bottom, white, #dfdddd);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f5f5, endColorstr=#dfdddd);
     background: -webkit-linear-gradient(top, white, #dfdddd);
