@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }} style="--vh: 8.2px">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +15,7 @@
         <link rel="stylesheet" type="text/css" href="css/tooltipster.main.min.css" />
         <link rel="stylesheet" type="text/css" href="css/igs.css" />
         <link rel="stylesheet" type="text/css" href="css/igsDialog.css" />
+        <link rel="stylesheet" type="text/css" hreg="css/shopMain.css" />
         
         <!-- Scripts -->
         
