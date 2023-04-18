@@ -183,13 +183,15 @@ table.links td.righthead {
 }
 
 html {
-    background-color: lightslategray;
+    //background-color: lightslategray;
+    background-color: RGB(247,247,247);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
 }
 
 body {
-    background-color: lightslategray;
+    //background-color: lightslategray;
+    background-color: RGB(247,247,247);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
     margin: 0px;
