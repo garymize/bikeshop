@@ -1092,11 +1092,11 @@ button{
     font-size: small;
     font-weight: normal;
     font-family: arial;
-    padding-top: 2px;
+    padding-top: 0px;
     padding-bottom: 2px;
     padding-left: 8px;
     padding-right: 8px;
-    border-radius: 3px;
+    border-radius: 2px;
     background-image: linear-gradient(to bottom, white, #dfdddd);
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f5f5, endColorstr=#dfdddd);
     /* background: -webkit-linear-gradient(top, white, #3cca39); */
