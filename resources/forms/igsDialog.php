@@ -26,7 +26,7 @@ echo '<style type="text/css">
         .dialogBody { font-family: Tahoma, Arial, Helvetica,Sans-Serif; font-size: 11pt; }
         .boxcontenttext { padding: 40px; font-size: 20pt; font-weight: bold; color: Steelblue; text-align: center;}      
         #divDialog {font-size: 10pt; }
-        #divDialog label {font-weight: bold; display: block; margin-top: 10px; }
+        #divDialog label {font-weight: normal; display: block; margin-top: 10px; }
         #divDialog input[type=\'text\'] { display: block; width: 400px; margin-bottom: 5px;}         
       </style>';
 
