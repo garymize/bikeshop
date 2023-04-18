@@ -4942,6 +4942,18 @@ function modifiedMessage() {
 function removeIGSMessage(){
     $('#igsDialog').hide();
     $('#igsDialog').children().remove();
+}
+
+function toggleIGSMessage(){
+    
+    var parent = document.getElementById("igsDialog");
+    var child = parent.firstElementChild;
+    if (child.disabled) {
+        child.disabled = false;
+    }else{
+        child.disabled = true;
+    }
+    
     
 }
 
