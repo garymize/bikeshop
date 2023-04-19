@@ -4952,9 +4952,18 @@ function toggleIGSMessage(){
         child.disabled = false;
     }else{
         child.disabled = true;
-    }
+    }    
+}
+
+function disableButton(){
     
-    
+    var parent = document.getElementById("igsDialog");
+    var child = parent.firstElementChild;
+    if (child.disabled) {
+        child.disabled = false;
+    }else{
+        child.disabled = true;
+    }    
 }
 
 //$(document).ready(function () {
