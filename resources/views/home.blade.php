@@ -26,8 +26,8 @@
     <button id="showMessageButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer button-blue" onClick="igsMessage('Loading...');" style="margin-top: 75px;"> Show Message</button><br>
     <button id="clearMessageButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="removeIGSMessage();" style="width: 200px;">Clear Message</button>
     <button id="toggleMessageButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="toggleIGSMessage();" style="width: 200px; margin-top: 105px;">Toggle Message</button>
-    <button id="disableButtonButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="disableButton("disableButtonButton");" style="width: 200px; margin-top: 155px;">Disable Button</button>
-    <button id="enableButtonButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="enableButton("enableButtonButton");" style="width: 200px; margin-top: 205px;">Enable Button</button>
+    <button id="disableButtonButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="disableButton("showMessageButton");" style="width: 200px; margin-top: 155px;">Disable Button</button>
+    <button id="enableButtonButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="enableButton("showMessageButton");" style="width: 200px; margin-top: 205px;">Enable Button</button>
 
 </body>
     
