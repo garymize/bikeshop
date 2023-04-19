@@ -4959,12 +4959,28 @@ function disableButton(buttonID){
     
     var button = document.getElementById(buttonID);
         button.disabled = true;
+        
+        disableEnableButton("clearMessageButton","enableButtonButton","disableButtonButton");
 }
 
 function enableButton(buttonID){
     
     var button = document.getElementById(buttonID);
         button.disabled = false;
+        
+        disableEnableButton("clearMessageButton","enableButtonButton","disableButtonButton");
+}
+
+function disableEnableButton(dependant,enable,disable){
+    
+    if (document.getElementsByClassName(dependant).disabled){
+        document.getElementById(enable).disabled = true;
+        document.getElementById(disable).disabled = false;
+    }else{
+        document.getElementById(enable).disabled = false;
+        document.getElementById(disable).disabled = true;
+    }
+    
 }
 
 //$(document).ready(function () {
