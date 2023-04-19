@@ -4955,10 +4955,16 @@ function toggleIGSMessage(){
     }    
 }
 
-function disableButton(){
+function disableButton(buttonID){
     
-    var button = document.getElementById("showMessageButton");
+    var button = document.getElementById(buttonID);
         button.disabled = true;
+}
+
+function enableButton(buttonID){
+    
+    var button = document.getElementById(buttonID);
+        button.disabled = false;
 }
 
 //$(document).ready(function () {
