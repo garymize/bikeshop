@@ -4957,13 +4957,8 @@ function toggleIGSMessage(){
 
 function disableButton(){
     
-    var parent = document.getElementById("igsDialog");
-    var child = parent.firstElementChild;
-    if (child.disabled) {
-        child.disabled = false;
-    }else{
-        child.disabled = true;
-    }    
+    var button = document.getElementById("showMessageButton");
+        button.disabled = true;
 }
 
 //$(document).ready(function () {
