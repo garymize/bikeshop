@@ -4971,7 +4971,7 @@ function enableButton(buttonID){
 
 function disableEnableButton(dependant,enable,disable){
     
-    if (document.getElementsByClassName(dependant).disabled){
+    if (document.getElementsById(dependant).disabled){
         console.log('button is disabaled');
         document.getElementById(enable).disabled = true;
         document.getElementById(disable).disabled = false;
