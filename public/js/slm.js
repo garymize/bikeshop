@@ -4946,13 +4946,7 @@ function removeIGSMessage(){
 
 function toggleIGSMessage(){
     
-    var parent = document.getElementById("igsDialog");
-    var child = parent.firstElementChild;
-    if (child.disabled) {
-        child.disabled = false;
-    }else{
-        child.disabled = true;
-    }    
+    $('#igsDialog').toggle();
 }
 
 function disableButton(buttonID){
