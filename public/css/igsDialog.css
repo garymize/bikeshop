@@ -371,13 +371,13 @@ input[type=button], input[type=submit]
 .dialog-header
 {	    
     background:  #003399 url(/images/dialogheader.png) repeat-x;
-	text-align: left;
-	color: cornsilk;
-	padding: 5px;	
-	padding-left: 10px;
-	font-size: 1.02em;
-	font-weight: normal;	
-	position: relative;
+    text-align: left;
+    color: cornsilk;
+    padding: 5px;	
+    padding-left: 14px;
+    font-size: 1.02em;
+    font-weight: normal;	
+    position: relative;
     -moz-border-radius: 4px 4px 0px 0px;   
     -webkit-border-radius: 4px 4px 0px 0px;       
     border-radius: 4px 4px 0px 0px;       
