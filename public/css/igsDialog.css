@@ -376,7 +376,7 @@ input[type=button], input[type=submit]
 	padding: 5px;	
 	padding-left: 10px;
 	font-size: 1.02em;
-	font-weight: bold;	
+	/*font-weight: bold;*/	
 	position: relative;
     -moz-border-radius: 4px 4px 0px 0px;   
     -webkit-border-radius: 4px 4px 0px 0px;       
