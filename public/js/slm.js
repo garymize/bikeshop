@@ -4973,12 +4973,12 @@ function disableEnableButton(dependant,enable,disable){
     
     if (document.getElementById(dependant).disabled){
         console.log('button is disabaled');
-//        document.getElementById(enable).disabled = true;
-//        document.getElementById(disable).disabled = false;
+        document.getElementById(enable).disabled = false;
+        document.getElementById(disable).disabled = true;
     }else{
         console.log('button is NOT disabled');
-//        document.getElementById(enable).disabled = false;
-//        document.getElementById(disable).disabled = true;
+        document.getElementById(enable).disabled = true;
+        document.getElementById(disable).disabled = false;
     }
     
 }
