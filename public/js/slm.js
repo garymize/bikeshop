@@ -4947,6 +4947,8 @@ function removeIGSMessage(){
 function toggleIGSMessage(){
     
     $('#igsDialog').toggle();
+    disableEnableButton("showMessageButton","enableButtonButton","disableButtonButton");
+    
 }
 
 function disableButton(buttonID){
@@ -4954,6 +4956,7 @@ function disableButton(buttonID){
     var button = document.getElementById(buttonID);
         button.disabled = true;        
     disableEnableButton("showMessageButton","enableButtonButton","disableButtonButton");
+    
 }
 
 function enableButton(buttonID){
