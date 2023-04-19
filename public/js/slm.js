@@ -4983,6 +4983,18 @@ function disableEnableButton(dependant,enable,disable){
     
 }
 
+function toggleButton(buttonID){
+
+    var button = document.getElementById(buttonID);
+    if (button.disabled){
+        button.disabled = false;
+    }else{
+        button.disabled = true;
+    }
+    
+}
+
+
 //$(document).ready(function () {
 //    $("#divDialog")
 //        .draggable( { handle: ".dialog-header" })
