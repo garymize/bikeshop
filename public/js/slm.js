@@ -4957,16 +4957,16 @@ function toggleIGSMessage(){
 
 function disableButton(buttonID){
     
-    disableEnableButton("clearMessageButton","enableButtonButton","disableButtonButton");
     var button = document.getElementById(buttonID);
         button.disabled = true;        
+    disableEnableButton("showMessageButton","enableButtonButton","disableButtonButton");
 }
 
 function enableButton(buttonID){
 
-    disableEnableButton("clearMessageButton","enableButtonButton","disableButtonButton");
     var button = document.getElementById(buttonID);
         button.disabled = false;
+    disableEnableButton("showMessageButton","enableButtonButton","disableButtonButton");
 }
 
 function disableEnableButton(dependant,enable,disable){
