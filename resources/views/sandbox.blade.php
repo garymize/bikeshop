@@ -30,7 +30,8 @@
     <button id="enableButtonButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="enableButton('showMessageButton');" style="width: 200px; margin-top: 205px;">Enable Button</button>
     <button id="toggleButtonButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="toggleButton('showMessageButton');" style="width: 200px; margin-top: 255px;">Toggle Button</button>
     
-    <button id="igsDialogButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="confirmSendModEmail()" style="width: 200px; margin-top: 305px;">Show IGS Dialog</button>
+    <button id="send-email" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="confirmSendModEmail()" style="width: 200px; margin-top: 305px;">Send Email</button>
+    <button id="approve-moderation" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="approveModeration()" style="width: 200px; margin-top: 355px;">Approve Moderation</button>
 
 </body>
     
