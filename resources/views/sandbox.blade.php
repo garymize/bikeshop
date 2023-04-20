@@ -32,6 +32,7 @@
     
     <button id="send-email" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="confirmSendModEmail()" style="width: 200px; margin-top: 305px;">Send Email</button>
     <button id="approve-moderation" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="approveModeration()" style="width: 200px; margin-top: 355px;">Approve Moderation</button>
+    <button id="progress" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="update_progress()" style="width: 200px; margin-top: 405px;">Progress</button>
 
 </body>
     
