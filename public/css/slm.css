@@ -206,8 +206,8 @@ margin: 30px;
 .container {
 	position:absolute;
         min-width:1102px;
-        width: calc(100vw - 30px);
-        width: -webkit-calc(100vw - 30px);
+        width: calc(100vw - 60px);
+        width: -webkit-calc(100vw - 60px);
 	background-color:white; 
 	min-height:700px;
 	/*max-height:850px;*/
