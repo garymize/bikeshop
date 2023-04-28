@@ -1,0 +1,33 @@
+ALTER TABLE public."Profile" ADD COLUMN firstname character NOT NULL;
+
+ALTER TABLE public."Profile" RENAME COLUMN sampleid TO id;
+
+ALTER TABLE public."Profile" ADD COLUMN lastname character NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN company character NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN address1 character NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN address2 character NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN state character NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN zip integer NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN phone1 integer NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN phone1_type character NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN phone2 integer NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN phone2_type character NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN phone3 integer NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN phone3_type character NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN last_contact_date date NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN "password" character NOT NULL;
+
+ALTER TABLE public."Profile" ADD COLUMN last_login date NOT NULL;

@@ -29,7 +29,7 @@
     <button id="disableButtonButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="disableButton('showMessageButton');" style="width: 200px; margin-top: 155px;">Disable Button</button>
     <button id="enableButtonButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="enableButton('showMessageButton');" style="width: 200px; margin-top: 205px;">Enable Button</button>
     <button id="toggleButtonButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="toggleButton('showMessageButton');" style="width: 200px; margin-top: 255px;">Toggle Button</button>
-    <button id="profileButtonButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="toggleButton('profileButton');" style="width: 200px; margin-top: 255px;">Profile Button</button>
+    <button id="profileButtonButton" class="IGSbutton IGSbutton-green IGSbutton-standard menuPointer" onClick="toggleButton('profileButton');" style="width: 200px; margin-top: 305px;">Profile Button</button>
 
 </body>
     
