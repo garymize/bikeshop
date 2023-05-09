@@ -14,7 +14,7 @@
 
     
     
-    <p>This is my body content.{{ date('Y-m-d H:i:s') }}</p>
+    <p>This is my body content.{{ date('d-m-Y H:i') }}</p>
     
     <div id="igsDialog"></div>
     
