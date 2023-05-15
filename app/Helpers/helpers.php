@@ -6,3 +6,10 @@ function bikershop_now(){
     return date('d-m-Y H:i A');
     
 }
+
+function pg_date($date){
+    
+    $date = new DateTime($date);
+    return $date->format('Y-m-d H:i:s');
+    
+}
