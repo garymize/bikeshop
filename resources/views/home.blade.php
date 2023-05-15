@@ -15,6 +15,7 @@
     
     
     <p>This is my body content.{{ bikershop_now() }}</p>
+    <p>This is my body content.{{ pg_date() }}</p>
     
     <div id="igsDialog"></div>
     
