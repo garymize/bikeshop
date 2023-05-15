@@ -2,6 +2,6 @@
 
 function bikershop_now(){
     
-    return date('d-m-Y H:i S:i');
+    return date('d-m-Y H:i:i');
     
 }
