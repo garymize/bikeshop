@@ -1,3 +1,6 @@
+@extends('layouts.formsLayout') 
+@section('title', 'User Form')
+
 @section('content')
 
 <body>
