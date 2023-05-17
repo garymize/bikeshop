@@ -45,7 +45,7 @@ class UsersController extends Controller
      */
     public function edit(users $users)
     {
-        view('forms/userForm')
+        view('forms/userForm');
     }
 
     /**
