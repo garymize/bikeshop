@@ -38,6 +38,7 @@ class UsersController extends Controller
     public function show(users $users)
     {
         $data = $users->first();
+        debug_to_console('test');
         return view('forms.userForm',['data'=>$data]);
     }
 

@@ -15,3 +15,13 @@ function pg_date($date){
     return $date2->format('Y-m-d H:i:s');
     
 }
+
+function debug_to_console($data) {
+    $output = $data;
+    if (is_array($output)){
+        $output = implode(',', $output);
+    }
+
+    echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+}
+
