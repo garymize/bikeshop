@@ -131,9 +131,9 @@ input[type=text], input[type=password], select
 	border-style:solid;
 	padding: 0px 2px 0px 2px;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
+        font-size: 17px;
         color: #535353;
-        line-height: 19px;
+        line-height: 30px;
 	
 }
 input[type=text]:focus,input[type=radio]:focus, input[type=password]:focus,select:focus
