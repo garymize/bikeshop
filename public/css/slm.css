@@ -1951,8 +1951,8 @@ input[type=text], input[type=password], select
 }*/
 input[type=button], input[type=submit]
 {
-	font-size: 8pt;
-        height: 23px;
+	font-size: 16pt;
+        height: 35px;
 }
 
 .radioButton-proposeNew{
