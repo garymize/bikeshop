@@ -65,4 +65,10 @@ class UsersController extends Controller
     {
         //
     }
+    
+    public function new(){
+        
+        return view('forms.newUserForm');
+        
+    }
 }
