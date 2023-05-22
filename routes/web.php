@@ -31,5 +31,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/userform/edit/',[UsersController::class, 'edit'])->name('user-form');
 Route::get('/userform/show/',[UsersController::class, 'show'])->name('show-user');
+Route::get('/user/new/',[UsersController::class, 'new'])->name('new-user');
+Route::get('/user/add/',[UsersController::class, 'new'])->name('new-add');
 
 require __DIR__.'/auth.php';
