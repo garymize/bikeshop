@@ -22,7 +22,7 @@
         <p>This is the body content.</p>
         <p>This is my body content.{{ bikershop_now() }}</p>
         <p>This is my body content.{{ pg_date(bikershop_now()) }}</p><br><br>
-        <label for='name' class='required;'>Name</label><br>
+        <label for='name' class='required'>Name</label><br>
         <input type='text' name="name" placeholder='name' size='50' required/> <br><br>
         <label for='password'>Password</label><br>        
         <input type='password' name="password" placeholder='password' size='50' required/> <br><br>
