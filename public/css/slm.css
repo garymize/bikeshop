@@ -2144,12 +2144,12 @@ tbody td { display: table-cell;} /* fixed width for TDs */
 
 /* required and -valid and -invalid work 
 together for field level validation */
-.required{
+/*.required{
     height: 19px;
     border-style: solid;
     border-width:  thin;
     border-color: lightgrey;
-}
+}*/
 
 .country{
     height: 24px;
