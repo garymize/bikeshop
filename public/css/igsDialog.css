@@ -149,6 +149,14 @@ input[type=button], input[type=submit]
 	font-size: 12pt;
         height: 25px;
 }
+
+[required] label::after {
+  content: '*';
+  font-size: 24px;
+  line-height: 0;
+  vertical-align: middle;
+}
+
 /*input[type=text], input[type=password], select 
 {    	    	
 	background-color: #F5F7FA;    	
