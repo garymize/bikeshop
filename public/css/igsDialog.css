@@ -157,6 +157,11 @@ input [required] label::after {
   vertical-align: middle;
 }
 
+  .required:after {
+    content:" *";
+    color: red;
+  }
+
 /*input[type=text], input[type=password], select 
 {    	    	
 	background-color: #F5F7FA;    	
