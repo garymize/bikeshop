@@ -24,7 +24,7 @@
         <p>This is my body content.{{ pg_date(bikershop_now()) }}</p><br><br>
         <label for='username'>Name</label><br>
         <input type='text' name="username" placeholder='user name' size='50' required/> <br><br>
-        <label for='Password'>Password</label><br>        
+        <label for='password'>Password</label><br>        
         <input type='password' name="password" placeholder='password' size='50' required/> <br><br>
         <label for='confirmpassword'>Confirm Password</label><br>        <input type='text' name="email" placeholder='email' size='50' required/> <br><br>
         <input type='password' name="confirmpassword" placeholder='confirm password' size='50' required/> <br><br>
