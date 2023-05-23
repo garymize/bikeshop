@@ -24,13 +24,13 @@
         <p>This is my body content.{{ pg_date(bikershop_now()) }}</p><br><br>
         <label for='name' class='required'>Name</label><br>
         <input type='text' name="name" placeholder='name' size='50' required/> <br><br>
-        <label for='password'>Password</label><br>        
+        <label for='password' class='required'>Password</label><br>        
         <input type='password' name="password" placeholder='password' size='50' required/> <br><br>
-        <label for='confirmpassword'>Confirm Password</label><br>        
+        <label for='confirmpassword' class='required'>Confirm Password</label><br>        
         <input type='password' name="confirmpassword" placeholder='confirm password' size='50' required/> <br><br>
-        <label for='email'>Email</label><br>        
+        <label for='email' class='required'>Email</label><br>        
         <input type='text' name="email" placeholder='email' size='50' required/> <br><br>
-        <label for='phone'>Phone</label><br>        
+        <label for='phone' class='required'>Phone</label><br>        
         <input type='text' name="phone" placeholder='phone' size='50' required/> <br><br>
         <input type='submit' value="Create User"/>
     </form>
