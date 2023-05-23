@@ -14,9 +14,9 @@
         
         <link rel="stylesheet" type="text/css" href="/css/tooltipster.main.min.css" />
         <!--<link rel="stylesheet" type="text/css" href="/css/igs.css" />-->
+        <link rel="stylesheet" type="text/css" hreg="/css/shopMain.css" />
         <link rel="stylesheet" type="text/css" href="/css/slm.css" />
         <link rel="stylesheet" type="text/css" href="/css/igsDialog.css" />
-        <link rel="stylesheet" type="text/css" hreg="/css/shopMain.css" />
         
         <!-- Scripts -->
         

@@ -66,5 +66,9 @@ body {
     margin: 8px;
 }
 
+label .required:after {
+  content:" *";
+  color: red;
+}
 
 
