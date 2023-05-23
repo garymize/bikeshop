@@ -9,12 +9,12 @@
         font-size: 40px;
     }
     
-    [required] label::after {
+/*    [required] label::after {
       content: '*';
       font-size: 24px;
       line-height: 0;
       vertical-align: middle;
-    }
+    }*/
 </style>
 
 <body>
