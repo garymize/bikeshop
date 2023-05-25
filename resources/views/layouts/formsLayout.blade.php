@@ -29,7 +29,7 @@
     </head>
     <body>
         @section('sidebar')
-            This is the master sidebar.
+            <!--This is the master sidebar.-->
         @show
  
         <div class="container">
