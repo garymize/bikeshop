@@ -21,19 +21,19 @@
     <form action='user/add' method='post'>
         <p>This is the body content.</p>
         <p>This is my body content.{{ bikershop_now() }}</p>
-        <p>This is my body content.{{ pg_date(bikershop_now()) }}</p><br><br>
+        <p>This is my body content.{{ pg_date(bikershop_now()) }}</p><br>
         <label for='firstname' class='required innerLabel'>First Name</label><br>
-        <input type='text' name="firstname" placeholder='' size='50' required/> <br><br>
+        <input type='text' name="firstname" placeholder='' size='50' required/> <br>
         <label for='lastname' class='required innerLabel'>Last Name</label><br>
-        <input type='text' name="lastname" placeholder='' size='50' required/> <br><br>
+        <input type='text' name="lastname" placeholder='' size='50' required/> <br>
         <label for='password' class='required innerLabel'>Password</label><br>        
-        <input type='password' name="password" placeholder='' size='50' required/> <br><br>
+        <input type='password' name="password" placeholder='' size='50' required/> <br>
         <label for='confirmpassword' class='required innerLabel'>Confirm Password</label><br>        
-        <input type='password' name="confirmpassword" placeholder='' size='50' required/> <br><br>
+        <input type='password' name="confirmpassword" placeholder='' size='50' required/> <br>
         <label for='email' class='required innerLabel'>Email</label><br>        
-        <input type='text' name="email" placeholder='' size='50' required/> <br><br>
+        <input type='text' name="email" placeholder='' size='50' required/> <br>
         <label for='phone' class='required innerLabel'>Phone</label><br>        
-        <input type='text' name="phone" placeholder='' size='50' required/> <br><br>
+        <input type='text' name="phone" placeholder='' size='50' required/> <br>
         <input type='submit' value="Create User"/>
     </form>
 </body>
