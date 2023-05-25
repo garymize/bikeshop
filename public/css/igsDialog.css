@@ -133,9 +133,16 @@ input[type=text], input[type=password], select
         font-family: Arial, Helvetica, sans-serif;
         font-size: 17px;
         color: #535353;
-        line-height: 30px;
+        line-height: 38px;
 	
 }
+
+.innerLabel {
+    margin-top: 18px;
+    position: absolute;
+    margin-left: 4px;
+}
+
 input[type=text]:focus,input[type=radio]:focus, input[type=password]:focus,select:focus
 {
         /*background-color: cornsilk;*/
