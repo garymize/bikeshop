@@ -156,7 +156,6 @@ input[type=button], input[type=submit]
 	font-size: 12pt;
         height: 25px;
         color: darkslategray;
-        border-color: darkslategray;
 }
 
 /*input [required] label::after {
