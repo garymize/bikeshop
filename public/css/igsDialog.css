@@ -125,16 +125,13 @@ fieldset
 
 input[type=text], input[type=password], select 
 {    	    	
-	background-color: #eeeeee;    	
-	/*background-color: whitesmoke;*/    	
-	border: solid 1px lightgray;
-	border-style:solid;
-	padding: 0px 2px 0px 4px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 17px;
-        color: darkslategray;
-        line-height: 38px;
-	
+    background-color: #eeeeee;
+    border: solid 1px lightgray;
+    border-style: solid;
+    padding: 11px 2px 0px 4px;
+    font-size: 17px;
+    color: darkslategray;
+    line-height: 31px;	
 }
 
 .innerLabel {
