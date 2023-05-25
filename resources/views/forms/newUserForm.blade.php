@@ -33,7 +33,7 @@
         <label for='email' class='required innerLabel'>Email</label><br>        
         <input type='text' name="email" placeholder='' size='50' required/> <br>
         <label for='phone' class='required innerLabel'>Phone</label><br>        
-        <input type='text' name="phone" placeholder='' size='50' required/> <br>
+        <input type='text' name="phone" placeholder='' size='50' required/> <br><br>
         <input type='submit' value="Create User"/>
     </form>
 </body>
