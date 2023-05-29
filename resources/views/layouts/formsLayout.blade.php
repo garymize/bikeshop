@@ -33,8 +33,11 @@
             <!--This is the master sidebar.-->
         @show
  
-        <div class="container">
-            @yield('content')
+        <div class='mm-header'>
+            @include('headers.mm-header')
+        </div>
+        <div class="mm-container">
+            @yield('mm-content')
         </div>
     </body>
 </html>

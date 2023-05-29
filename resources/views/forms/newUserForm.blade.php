@@ -1,7 +1,7 @@
 @extends('layouts.formsLayout') 
 @section('title', 'New User Form')
 
-@section('content')
+@section('mm-content')
 
 <style>
     input {
