@@ -20,17 +20,17 @@
     <div>
         <form action='user/add' method='post'>
             <label for='firstname' class='required innerLabel'>First Name</label><br>
-            <input type='text' name="firstname" placeholder='' size='50' required/> <br>
+            <input type='text' name="firstname" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='lastname' class='required innerLabel'>Last Name</label><br>
-            <input type='text' name="lastname" placeholder='' size='50' required/> <br>
+            <input type='text' name="lastname" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='password' class='required innerLabel'>Password</label><br>        
-            <input type='password' name="password" placeholder='' size='50' required/> <br>
+            <input type='password' name="password" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='confirmpassword' class='required innerLabel'>Confirm Password</label><br>        
-            <input type='password' name="confirmpassword" placeholder='' size='50' required/> <br>
+            <input type='password' name="confirmpassword" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='email' class='required innerLabel'>Email</label><br>        
-            <input type='text' name="email" placeholder='' size='50' required/> <br>
+            <input type='text' name="email" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='phone' class='required innerLabel'>Phone</label><br>        
-            <input type='text' name="phone" placeholder='' size='50' required/> <br><br>
+            <input type='text' name="phone" placeholder='' size='50' class='std-field-width' required/> <br><br>
             <input type='submit' value="Create User"/>
         </form>
     </div>
