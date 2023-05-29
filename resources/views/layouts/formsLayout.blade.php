@@ -29,7 +29,7 @@
 
     </head>
     <body>
-        <div class='container center-container'>
+        <div class='w3-container'>
             <div class='mm-header'>
                 @include('headers.mm-header')
             </div>
