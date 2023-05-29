@@ -29,13 +29,13 @@
 
     </head>
     <body>
-        <container class='container'>
+        <div class='container'>
             <div class='mm-header'>
                 @include('headers.mm-header')
             </div>
             <div class="mm-container">
                 @yield('mm-content')
             </div>
-        </container>
+        </div>
     </body>
 </html>
