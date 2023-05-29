@@ -29,7 +29,7 @@
 
     </head>
     <body>
-        <container>
+        <container class='container'>
             <div class='mm-header'>
                 @include('headers.mm-header')
             </div>
