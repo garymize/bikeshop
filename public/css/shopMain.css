@@ -93,3 +93,20 @@ input[type=text], input[type=password], select
     line-height: 30px;
 
 }
+
+input[type=text], input[type=password], select 
+{    	    	
+    background-color: #eeeeee;
+    border: solid 1px lightgray;
+    border-style: solid;
+    padding: 11px 2px 0px 4px;
+    font-size: 17px;
+    color: darkslategray;
+    line-height: 31px;	
+}
+
+.innerLabel {
+    margin-top: 18px;
+    position: absolute;
+    margin-left: 4px;
+}
