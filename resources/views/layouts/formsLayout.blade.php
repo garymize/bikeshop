@@ -29,10 +29,6 @@
 
     </head>
     <body>
-        @section('sidebar')
-            <!--This is the master sidebar.-->
-        @show
- 
         <div class='mm-header'>
             @include('headers.mm-header')
         </div>
