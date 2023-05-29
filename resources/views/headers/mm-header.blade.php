@@ -1,1 +1,3 @@
-<header>@yield('header')</header>
+<header>
+    @yield('header')
+</header>
