@@ -96,3 +96,11 @@ input[type=text], input[type=password], select
     position: absolute;
     margin-left: 4px;
 }
+
+button, [type=button], [type=submit] {
+    line-height: 33px;
+    font-size: 20px;
+}
+
+
+
