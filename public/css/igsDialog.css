@@ -123,7 +123,7 @@ fieldset
 	padding: 10px;  
 }
 
-input[type=text], input[type=password], select 
+/*input[type=text], input[type=password], select 
 {    	    	
     background-color: #eeeeee;
     border: solid 1px lightgray;
@@ -132,7 +132,7 @@ input[type=text], input[type=password], select
     font-size: 17px;
     color: darkslategray;
     line-height: 31px;	
-}
+}*/
 
 /*.innerLabel {
     margin-top: 18px;
