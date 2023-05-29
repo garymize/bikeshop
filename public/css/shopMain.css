@@ -75,7 +75,7 @@ body {
 }
 
 .container {
-    min-height: 50px;
+    min-height: 400px;
     width: 400px;
 }
 
@@ -106,6 +106,12 @@ button, [type=button], [type=submit] {
     line-height: 33px;
     font-size: 20px;
 }
+
+.mm-header {
+    min-height: 50px;
+    width: 100%;
+}
+
 
 
 
