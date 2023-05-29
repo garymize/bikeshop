@@ -1,6 +1,10 @@
 @extends('layouts.formsLayout') 
 @section('title', 'New User Form')
 
+@section('header-text')
+    Create New User
+@stop
+
 @section('mm-content')
 
 <style>
