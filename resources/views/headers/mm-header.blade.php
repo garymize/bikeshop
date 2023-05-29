@@ -1,1 +1,1 @@
-<div>This is the header</div>
+<header>This is the header</header>

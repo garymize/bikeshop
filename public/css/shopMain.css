@@ -68,11 +68,14 @@ body,table,td,th,input,textarea,select
     font-size: 10pt;
 }
 
-header 
+header {
+    margin-left: 20px;
+}
 
 body {
     display: block;
     margin: 8px;
+    margin-left: 20px;
 }
 
 .required:after {
