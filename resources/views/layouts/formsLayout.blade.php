@@ -17,7 +17,7 @@
         <!--<link rel="stylesheet" type="text/css" href="/css/igs.css" />-->
         <link rel="stylesheet" type="text/css" href="/css/shopMain.css" />
         <link rel="stylesheet" type="text/css" href="/css/slm.css" />
-        <!--<link rel="stylesheet" type="text/css" href="/css/igsDialog.css" />-->
+        <link rel="stylesheet" type="text/css" href="/css/igsDialog.css" />
         
         <!-- Scripts -->
         
