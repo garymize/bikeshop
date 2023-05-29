@@ -77,12 +77,15 @@ body {
     display: block;
     margin: 8px;
     margin-left: 20px;
+    width: 600px;
 }
 
 .container {
     min-height: 500px;
     min-width: 500px;
-    width: 400px;}
+    width: 65%;
+    margin: auto;
+}
 
 .required:after {
   content:" *";
