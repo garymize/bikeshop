@@ -65,7 +65,11 @@ body,table,td,th,input,textarea,select
 }
 
 header {
-    /*margin-left: 20px;*/
+    min-height: 50px;
+    width: 100%;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkslategray;
 }
 
 body {
@@ -75,9 +79,9 @@ body {
 }
 
 .container {
-    min-height: 400px;
-    width: 400px;
-}
+    min-height: 500px;
+    min-width: 500px;
+    width: 400px;}
 
 .required:after {
   content:" *";
