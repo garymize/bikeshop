@@ -2,7 +2,7 @@
 @section('title', 'New User Form')
 
 @section('mm-header')
-    <div class='mm-center'>Create New User</div>
+    <div>Create New User</div>
 @stop
 
 @section('mm-content')

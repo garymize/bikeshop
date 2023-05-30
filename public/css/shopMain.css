@@ -122,9 +122,9 @@ button, [type=button], [type=submit] {
 .mm-header {
     min-height: 50px;
     width: 100%;
-    border-style: solid;
-    border-width: thin;
-    border-color: lightgray;
+    /*border-style: solid;*/
+    /*border-width: thin;*/
+    /*border-color: lightgray;*/
 }
 
 .mm-center {
