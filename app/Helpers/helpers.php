@@ -10,7 +10,7 @@ function bikershop_now(){
 function prettyDateTime(){
     
     $date = bikershop_now();
-    $dateObj = DateTime::createFromFormat('!m',$date);
+    $dateObj = DateTime::createFromFormat('!m',5);
     return $dateObj->format('F');
     
 }
