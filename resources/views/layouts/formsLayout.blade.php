@@ -30,7 +30,7 @@
     </head>
     <body style='margin-top: 100px;'>
         <div class='mm-container'>
-            <div class='mm-header mm-vertical-center'>
+            <div class='mm-header'>
                 @yield('mm-header')
             </div>
             <div>
