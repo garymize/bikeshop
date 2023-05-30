@@ -33,7 +33,7 @@
     }
 
     function display_ct() {
-        var x = Date.now();
+        var x = new Date().toLocaleTimeString();
         document.getElementById('ct').innerHTML = x;
         display_c();
     }
