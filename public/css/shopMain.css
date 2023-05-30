@@ -128,7 +128,7 @@ button, [type=button], [type=submit] {
 }
 
 .mm-center {
-    text-align: center;
+    padding: 10px,0;
 }
 
 .mm-vertical-center {
