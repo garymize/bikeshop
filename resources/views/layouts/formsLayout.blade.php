@@ -26,11 +26,22 @@
         <script src="/js/tooltipster.main.min.js"></script>
         <script src="/js/tooltipster.bundle.js" ></script>
         <script src='/js/slm.js'></script>
+    <script type="text/javascript"> 
+    function display_c(){
+        var refresh=1000; // Refresh rate in milli seconds
+        mytime=setTimeout('display_ct()',refresh)
+    }
 
+    function display_ct() {
+        var x = new Date()
+        document.getElementById('ct').innerHTML = x;
+        display_c();
+    }
+</script>
     </head>
     <div class='mm-title-logo'><img src='/images/dhc-logo.webp' width='35px'/> Devils Head Choppers</div>
-    <div class='mm-header-date'><p>{{ prettyDateTime() }}</p></div>
-    <body>
+    <div class='mm-header-date'><p>{{ prettyDateTime() }}</p><span id='ct' ></span></div>
+    <body onload=display_ct();>
         <div class='mm-container'>
             <div name="canvas" class="mm-canvas">
                 <div class='mm-center mm-header'>
