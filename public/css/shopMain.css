@@ -70,6 +70,14 @@ body,table,td,th,input,textarea,select
     margin-bottom: 5px;
 }
 
+.mm-header-date {
+    float: right;
+    display: inline-block;
+    top: 21px;
+    position: relative;
+    font-size: 24px;
+}
+
 header {
     min-height: 50px;
     width: 100%;
