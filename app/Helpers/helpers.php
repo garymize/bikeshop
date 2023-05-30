@@ -7,6 +7,14 @@ function bikershop_now(){
     
 }
 
+function prettyDateTime(){
+    
+    $date = new bikershop_now();
+    dateObj = DateTime::createFromFormat($date);
+    return $dateObj->format('F');
+    
+}
+
 function pg_date($date){
     
 //    $date = '15-05-2023 10:08 PM';

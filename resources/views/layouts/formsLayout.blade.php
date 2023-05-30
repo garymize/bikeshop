@@ -29,7 +29,7 @@
 
     </head>
     <div class='mm-title-logo'><img src='/images/dhc-logo.webp' width='35px'/> Devils Head Choppers</div>
-    <div style='float: right;'><p> Date/Time Here: {{ bikershop_now() }}</p></div>
+    <div style='float: right;'><p> Date/Time Here: {{ prettyDateTime() }}</p></div>
     <body>
         <div class='mm-container'>
             <div name="canvas" class="mm-canvas">
