@@ -80,12 +80,12 @@ body {
     width: 600px;
 }
 
-.mm-container {
+/*.mm-container {
     min-height: 500px;
     min-width: 500px;
     width: 65%;
     margin: auto;
-}
+}*/
 
 .required:after {
   content:" *";
@@ -140,6 +140,25 @@ button, [type=button], [type=submit] {
   transform: translateY(-50%);
 }
 
+.mm-container {
+	position:absolute;
+        min-width:1102px;
+        width: calc(100vw - 60px);
+        width: -webkit-calc(100vw - 60px);
+	background-color:white; 
+	min-height:700px;
+	/*max-height:850px;*/
+	max-height:1500px;
+        min-height: 801px;
+        height: 801px;
+        /*height: 64vw;*/
+	border:1px solid gray;  
+	padding-right:0px; 
+	margin-top:-0px; 
+	margin-left:-0px;
+	background-color:#fff;
+        /*overflow-y: auto;*/
+	}
 
 
 

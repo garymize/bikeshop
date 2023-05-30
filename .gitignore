@@ -18,4 +18,6 @@ yarn-error.log
 /.idea
 /.vscode
 heroku.*
+private.xml
+
 
