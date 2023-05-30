@@ -40,7 +40,7 @@
 </script>
     </head>
     <div class='mm-title-logo'><img src='/images/dhc-logo.webp' width='35px'/> Devils Head Choppers</div>
-    <div class='mm-header-date'><p>{{ prettyDateTime() }}</p><span id='ct' ></span></div>
+    <div class='mm-header-date'><p>{{ prettyDateTime() }}<span id='ct' ></span></p></div>
     <body onload=display_ct();>
         <div class='mm-container'>
             <div name="canvas" class="mm-canvas">
