@@ -122,6 +122,17 @@ button, [type=button], [type=submit] {
 .mm-header {
     min-height: 50px;
     width: 100%;
+    border-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+}
+
+.mm-vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 
