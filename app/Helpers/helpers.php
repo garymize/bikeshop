@@ -10,8 +10,9 @@ function bikershop_now(){
 function prettyDateTime(){
     
     $date = bikershop_now();
-    $dateObj = DateTime::createFromFormat('!m',5);
-    return $dateObj->format('F');
+    $month = date('M');
+    $day_year = date('d Y');
+    return $month+' '+$day_year;
     
 }
 
