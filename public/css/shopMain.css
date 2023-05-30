@@ -141,24 +141,33 @@ button, [type=button], [type=submit] {
 }
 
 .mm-container {
-	position:absolute;
-        min-width:1102px;
-        width: calc(100vw - 60px);
-        width: -webkit-calc(100vw - 60px);
-	background-color:white; 
-	min-height:700px;
-	/*max-height:850px;*/
-	max-height:1500px;
-        min-height: 801px;
-        height: 801px;
-        /*height: 64vw;*/
-	border:1px solid gray;  
-	padding-right:0px; 
-	margin-top:-0px; 
-	margin-left:-0px;
-	background-color:#fff;
-        /*overflow-y: auto;*/
-	}
+    position:absolute;
+    min-width:1102px;
+    width: calc(100vw - 60px);
+    width: -webkit-calc(100vw - 60px);
+    background-color:white; 
+    min-height:700px;
+    /*max-height:850px;*/
+    max-height:1500px;
+    min-height: 801px;
+    height: 801px;
+    /*height: 64vw;*/
+    border:1px solid gray;  
+    padding-right:0px; 
+    margin-top:-0px; 
+    margin-left:-0px;
+    background-color:#fff;
+    /*overflow-y: auto;*/
+}
 
+.mm-canvas {
+    min-height: 500px;
+    min-width: 500px;
+    max-height: 500px;
+    height: 500px;
+    width: 65%;
+    max-width: 500px;
+    margin: auto;
+}
 
 

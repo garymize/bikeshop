@@ -30,11 +30,13 @@
     </head>
     <body style='margin-top: 100px;'>
         <div class='mm-container'>
-            <div class='mm-center mm-header'>
-                @yield('mm-header')
-            </div>
-            <div>
-                @yield('mm-content')
+            <div name="canvas" class="mm-canvas">
+                <div class='mm-center mm-header'>
+                    @yield('mm-header')
+                </div>
+                <div>
+                    @yield('mm-content')
+                </div>
             </div>
         </div>
     </body>
