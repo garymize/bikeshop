@@ -31,7 +31,7 @@
     <body style='margin-top: 100px;'>
         <div class='mm-container'>
             <div class='mm-header'>
-                @include('headers.mm-header')
+                @yield('mm-header')
             </div>
             <div>
                 @yield('mm-content')

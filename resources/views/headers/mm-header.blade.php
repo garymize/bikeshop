@@ -1,3 +1,3 @@
 <header>
-    @yield('header')
+    {{ $headerText }}
 </header>
