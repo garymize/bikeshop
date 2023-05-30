@@ -33,7 +33,7 @@
     }
 
     function display_ct() {
-        var x = new Date()
+        var x = new Date.now();
         document.getElementById('ct').innerHTML = x;
         display_c();
     }
