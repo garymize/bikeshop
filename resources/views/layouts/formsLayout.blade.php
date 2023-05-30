@@ -28,6 +28,7 @@
         <script src='/js/slm.js'></script>
 
     </head>
+    <div><img src='/images/dhc-logo.webp' width='35px'/> Devils Head Choppers</div>
     <body>
         <div class='mm-container'>
             <div name="canvas" class="mm-canvas">
