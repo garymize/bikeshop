@@ -28,7 +28,7 @@
         <script src='/js/slm.js'></script>
 
     </head>
-    <body style='margin-top: 100px;'>
+    <body>
         <div class='mm-container'>
             <div name="canvas" class="mm-canvas">
                 <div class='mm-center mm-header'>

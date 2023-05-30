@@ -4,7 +4,7 @@
 */
 
 .body {
-    
+    margin-top: 60px;
 }
 
 element.style {
@@ -154,6 +154,7 @@ button, [type=button], [type=submit] {
     /*height: 64vw;*/
     border:1px solid gray;  
     padding-right:0px; 
+    padding-top: 50
     margin-top:-0px; 
     margin-left:-0px;
     background-color:#fff;
