@@ -12,7 +12,7 @@ function prettyDateTime(){
     $date = bikershop_now();
     $month = date('M');
     $day_year = date('d Y');
-    return $month+' '+$day_year;
+    return $month.' '.$day_year;
     
 }
 
