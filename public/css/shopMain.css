@@ -121,7 +121,8 @@ button, [type=button], [type=submit] {
 
 .mm-header {
     min-height: 50px;
-    width: 100%;
+    width: 100%;    font-size: 24px;
+    font-size: 24px;
     /*border-style: solid;*/
     /*border-width: thin;*/
     /*border-color: lightgray;*/
