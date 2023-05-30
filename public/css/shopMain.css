@@ -127,6 +127,10 @@ button, [type=button], [type=submit] {
     border-color: lightgray;
 }
 
+.mm-center {
+    text-align: center;
+}
+
 .mm-vertical-center {
   margin: 0;
   position: absolute;
