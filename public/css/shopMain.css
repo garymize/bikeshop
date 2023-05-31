@@ -159,7 +159,7 @@ button, [type=button], [type=submit] {
 
 .mm-container {
     position:absolute;
-    min-width:1102px;
+    /*min-width:1102px;*/
     width: calc(100vw - 39px);
     width: -webkit-calc(100vw - 39px);
     background-color:dimgray; 
