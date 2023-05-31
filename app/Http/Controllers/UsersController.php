@@ -25,6 +25,11 @@ class UsersController extends Controller
         return view('forms.newUserForm');
     }
 
+    public function create2(): View
+    {
+        return view('forms.newUserForm2');
+    }
+
     /**
      * Store a newly created resource in storage.
      */
