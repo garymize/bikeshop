@@ -191,4 +191,8 @@ button, [type=button], [type=submit] {
     padding: 20px;
 }
 
-
+.mm-header-date {
+    
+    display: none;
+    
+}
