@@ -92,7 +92,9 @@ body {
     margin: 8px;
     margin-top: 60px;
     margin-left: 20px;
-    width: 600px;
+    /*width: 600px;*/
+    width: calc(100vw - 39px);
+    width: -webkit-calc(100vw - 39px);
 }
 
 /*.mm-container {
@@ -158,8 +160,8 @@ button, [type=button], [type=submit] {
 .mm-container {
     position:absolute;
     min-width:1102px;
-    width: calc(100vw - 60px);
-    width: -webkit-calc(100vw - 60px);
+    width: calc(100vw - 39px);
+    width: -webkit-calc(100vw - 39px);
     background-color:dimgray; 
     min-height:700px;
     /*max-height:850px;*/
