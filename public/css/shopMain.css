@@ -71,6 +71,10 @@ body,table,td,th,input,textarea,select
     margin-left: 5px;
 }
 
+@media (max-width: 400px){
+    display: none;
+}
+
 .mm-header-date {
     float: right;
     display: inline-block;
@@ -78,6 +82,7 @@ body,table,td,th,input,textarea,select
     position: relative;
     font-size: 24px;
 }
+
 
 header {
     min-height: 50px;
