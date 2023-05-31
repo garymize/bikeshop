@@ -68,6 +68,7 @@ body,table,td,th,input,textarea,select
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 5px;
+    margin-left: 5px;
 }
 
 .mm-header-date {
@@ -159,28 +160,28 @@ button, [type=button], [type=submit] {
 
 .mm-container {
     box-sizing: border-box;
-    position:absolute;
-    /*min-width:1102px;*/
+    position: absolute;
+    /* min-width: 1102px; */
     width: calc(100vw - 39px);
-    width: -webkit-calc(100vw - 39px);
-    background-color:dimgray; 
-    min-height:700px;
-    /*max-height:850px;*/
-    max-height:1500px;
+    width: -webkit-calc(100vw - -22px);
+    background-color: dimgray;
+    min-height: 700px;
+    /* max-height: 850px; */
+    max-height: 1500px;
     min-height: 801px;
     height: 801px;
-    /*height: 64vw;*/
-    border:1px solid gray;  
-    padding-right:0px; 
+    /* height: 64vw; */
+    border: 1px solid gray;
+    padding-right: 0px;
     padding-top: 50px;
-    margin-top:-0px; 
-    margin-left:-0px;
-    /*overflow-y: auto;*/
+    margin-top: 0px;
+    margin-left: 0px;
+    /* overflow-y: auto;
 }
 
 .mm-canvas {
     min-height: 500px;
-    min-width: 500px;
+    min-width: calc(100vw - 40px);
     max-height: 600px;
     height: 600px;
     width: 65%;
