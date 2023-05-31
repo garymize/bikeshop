@@ -93,7 +93,6 @@ body {
     margin-top: 60px;
     margin-left: 20px;
     width: 600px;
-    background-color: dimgray;
 }
 
 /*.mm-container {
@@ -161,7 +160,7 @@ button, [type=button], [type=submit] {
     min-width:1102px;
     width: calc(100vw - 60px);
     width: -webkit-calc(100vw - 60px);
-    background-color:white; 
+    background-color:dimgray; 
     min-height:700px;
     /*max-height:850px;*/
     max-height:1500px;
