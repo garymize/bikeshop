@@ -111,7 +111,7 @@ body {
 
 input[type=text], input[type=password], select 
 {    	    	
-    background-color: #f7f7ff7;
+    background-color: #f7f7f7;
     border: solid 1px lightgray;
     border-style: solid;
     padding: 11px 2px 0px 4px;
