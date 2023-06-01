@@ -174,8 +174,8 @@ button, [type=button], [type=submit] {
     min-height: 700px;
     /* max-height: 850px; */
     max-height: 1500px;
-    min-height: 801px;
-    height: 801px;
+    /*min-height: 801px;*/
+    height: 700px;
     /* height: 64vw; */
     border: 1px solid gray;
     padding-right: 0px;
@@ -187,9 +187,9 @@ button, [type=button], [type=submit] {
 
 .mm-canvas {
     min-height: 500px;
-    min-width: calc(100vw - 40px);
+    /*min-width: calc(100vw - 40px);*/
     max-height: 600px;
-    height: 600px;
+    height: 500px;
     width: 65%;
     max-width: 500px;
     margin: auto;
