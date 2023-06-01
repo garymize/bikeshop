@@ -36,7 +36,7 @@
             <label for='phone' class='required innerLabel'>Phone</label><br>        
             <input type='text' name="phone" placeholder='' size='50' class='std-field-width' required/> <br><br>
             <input type='submit' style='inline-block' value="Create User"/>
-            <input type='button' style='inline-block' formaction="{{ route('dashboard') }} value="Cancel"/>
+            <input type='button' style='inline-block' formaction="{{ route('dashboard') }}" value="Cancel"/>
         </form>
     </div>
 
