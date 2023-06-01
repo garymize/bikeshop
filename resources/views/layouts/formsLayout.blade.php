@@ -39,8 +39,8 @@
     }
 </script>
     </head>
-    <div class='mm-title-logo'><img src='/images/dhc-logo.webp' width='35px'/><span style='color:#A80000'> Devils Head Choppers</span></div>
-    <div class='mm-header-date'><p style='color:dimgray'>{{ prettyDateTime() }} - <span id='ct' ></span></p></div>
+    <div class='mm-title-logo' style='390px;'><img src='/images/dhc-logo.webp' width='35px'/><span style='color:#A80000'> Devils Head Choppers</span></div>
+    <div class='mm-header-date' style='display: none;'><p style='color:dimgray'>{{ prettyDateTime() }} - <span id='ct' ></span></p></div>
     <body onload=display_ct();>
         <div class='mm-container'>
             <div name="canvas" class="mm-canvas">
