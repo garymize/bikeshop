@@ -65,10 +65,11 @@ body,table,td,th,input,textarea,select
 }
 
 .mm-title-logo {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
-    margin-bottom: 5px;
-    margin-left: 5px;
+    /*margin-bottom: 5px;*/
+    /*margin-left: 5px;*/
+    padding 5px;
 }
 
 @media (max-width: 400px){
@@ -167,8 +168,8 @@ button, [type=button], [type=submit] {
     box-sizing: border-box;
     position: absolute;
     /* min-width: 1102px; */
-    width: calc(100vw - 39px);
-    width: -webkit-calc(100vw - -22px);
+    width: calc(100vw - 1px);
+    width: -webkit-calc(100vw - -1px);
     background-color: dimgray;
     min-height: 700px;
     /* max-height: 850px; */
