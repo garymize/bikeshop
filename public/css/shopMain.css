@@ -69,7 +69,7 @@ body,table,td,th,input,textarea,select
     font-weight: bold;
     /*margin-bottom: 5px;*/
     /*margin-left: 5px;*/
-    padding 5px;
+    padding: 5px;
 }
 
 @media (max-width: 400px){
