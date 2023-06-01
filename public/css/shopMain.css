@@ -197,9 +197,10 @@ min-height: 500px; */
     padding: 20px;
     padding-bottom: 60px;}
 
-@media (max-width: 500px)
-.mm-header-date {
-    
-    display: none;
-    
+@media (max-width: 500px){
+    .mm-header-date {
+
+        display: none;
+
+    }
 }
