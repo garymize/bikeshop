@@ -96,8 +96,8 @@ header {
 body {
     display: block;
     margin: 8px;
-    margin-top: 60px;
-    margin-left: 20px;
+    /*margin-top: 60px;*/
+    /*margin-left: 20px;*/
     /*width: 600px;*/
     /*width: calc(100vw - 39px);*/
     /*width: -webkit-calc(100vw - 39px);*/
