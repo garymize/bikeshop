@@ -43,9 +43,9 @@ class UsersController extends Controller
         $user = new users();
         $user->firstname = $request['firstname'];
         $user->lastname  = $request['lastname'];
-        $user->password  = $request(['password']);
-        $user->email     = $request(['email']);
-        $user->phone     = $request(['phone']);
+        $user->password  = $request['password'];
+        $user->email     = $request['email'];
+        $user->phone     = $request['phone'];
         $user->save();
         
         
