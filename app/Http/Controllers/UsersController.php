@@ -37,7 +37,7 @@ class UsersController extends Controller
     public function store(StoreusersRequest $request)
     {
         $this->validate($request,[
-            'email' => 'required|unique:users',
+            'email' => 'bail|required|unique:users',
             'phone' => 'required',
         ]);
         
