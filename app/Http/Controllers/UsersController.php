@@ -41,6 +41,7 @@ class UsersController extends Controller
         ]);
         
         $user = new users();
+        $user->name      = $request['firstname'].' '.$request['lastname'];
         $user->firstname = $request['firstname'];
         $user->lastname  = $request['lastname'];
         $user->password  = $request['password'];
