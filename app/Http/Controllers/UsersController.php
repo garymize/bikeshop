@@ -27,7 +27,8 @@ class UsersController extends Controller
 
     public function create2(): View
     {
-        return view('forms.newUserForm2');
+        $token = csrf_token();
+        return view('forms.newUserForm2')->with($token);
     }
 
     /**
