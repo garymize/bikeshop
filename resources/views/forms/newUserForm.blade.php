@@ -1,16 +1,5 @@
 @extends('layouts.formsLayout') 
 
-
-@if ($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
-
 @section('title', 'New User Form')
 
 @section('mm-header')
@@ -19,19 +8,16 @@
 
 @section('mm-content')
 
-<style>
-/*    input {
-        line-height: 50px;
-        font-size: 40px;
-    }*/
-    
-/*    [required] label::after {
-      content: '*';
-      font-size: 24px;
-      line-height: 0;
-      vertical-align: middle;
-    }*/
-</style>
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
 
     <div>
         <form action='/user/store' method='post'>
