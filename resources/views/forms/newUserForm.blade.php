@@ -22,7 +22,7 @@
 </style>
 
     <div>
-        <form action='user/add' method='post'>
+        <form action='user/create' method='post'>
             <label for='firstname' class='required innerLabel'>First Name</label><br>
             <input type='text' name="firstname" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='lastname' class='required innerLabel'>Last Name</label><br>
