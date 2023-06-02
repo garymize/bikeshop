@@ -22,13 +22,13 @@ class UsersController extends Controller
      */
     public function create(): View
     {
-        return view('forms.newUserForm');
+        $token = csrf_token();
+        return view('forms.newUserForm')->with($token);
     }
 
     public function create2(): View
     {
-        $token = csrf_token();
-        return view('forms.newUserForm2')->with($token);
+        return view('forms.newUserForm2');
     }
 
     /**
