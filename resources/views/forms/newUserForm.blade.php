@@ -39,5 +39,6 @@
             <input type='button' style='display:inline-block; float:right;' formaction="{{ route('dashboard') }}" value="Cancel"/>
         </form>
     </div>
+    @csrf
 
 @stop
