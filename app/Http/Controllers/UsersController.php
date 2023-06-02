@@ -36,6 +36,19 @@ class UsersController extends Controller
      */
     public function store(StoreusersRequest $request)
     {
+        $this->validate($request,[
+            //validation logic
+        ]);
+        
+        $user = new users();
+        $user->firstname = $request['firstname'];
+        $user->lastname  = $request['lastname'];
+        $user->password  = $request(['password']);
+        $user->email     = $request(['email']);
+        $user->phone     = $request(['phone']);
+        $user->save();
+        
+        
         return view('profile.partials.userCreated');
     }
 
