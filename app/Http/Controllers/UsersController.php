@@ -35,7 +35,7 @@ class UsersController extends Controller
      */
     public function store(StoreusersRequest $request)
     {
-        //
+        return view('profile.partials.userCreated');
     }
 
     /**
