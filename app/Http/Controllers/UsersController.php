@@ -37,7 +37,8 @@ class UsersController extends Controller
     public function store(StoreusersRequest $request)
     {
         $this->validate($request,[
-            //validation logic
+            'email' => 'required|unique:users',
+            'phone' => 'required',
         ]);
         
         $user = new users();
