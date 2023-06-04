@@ -59,7 +59,7 @@ class UsersController extends Controller
      */
     public function show(users $users)
     {
-        $data = $users->first('garymize@yahoo.com');
+        $data = $users->where('email','garymize@yahoo.com')->firstOrFail();
         debug_to_console($data);
         return view('userView',['data'=>$data]);
     }
