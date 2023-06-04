@@ -116,7 +116,7 @@ body {
   color: red;
 }
 
-input[type=text], input[type=password], select 
+input[type=text], input[type=password], input[type=tel], select 
 {    	    	
     background-color: #f7f7f7;
     border: solid 1px lightgray;
@@ -132,7 +132,7 @@ input[type=text], input[type=password], select
     width: 100%;
 }
 
-.inputDisabled {
+ .inputDisabled {
     border: none;
 }
 
@@ -190,7 +190,7 @@ button, [type=button], [type=submit] {
 }
 
 .mm-canvas {
-min-height: 500px; */
+    /*min-height: 500px;*/
     /* min-width: calc(100vw - 40px); */
     max-height: 800px;
     /* height: 500px; */
