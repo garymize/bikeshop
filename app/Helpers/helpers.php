@@ -35,14 +35,14 @@ function debug_to_console($data) {
 }
 
 function phoneFormat($phone){
-debug_to_console('phone: '.$phone);
+
     $phone = cleanPhone($phone);
-debug_to_console('phone: '.$phone);
+
     $areaCode  = substr(0,3,$phone);
     $prefix    = substr(3,3,$phone);
     $extension = substr(6,4,$phone);
-debug_to_console('phone: '.$phone);
-    return $areaCode.$prefix.$extension;
+
+    echo '('.$areaCode.') '.$prefix.'-'.$extension;
     
 }
 
