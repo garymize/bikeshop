@@ -31,7 +31,7 @@
         <label for='email' class='required innerLabel'>Email</label><br>        
         <input type='text' autocomplete="off" value="{{ $data->email }}" name="email" placeholder='' size='50' class='std-field-width inputDisabled' disabled="true" required/> <br>
         <label for='phone' class='required innerLabel'>Phone</label><br>        
-        <input type='tel' autocomplete="off" value="{{ $data->phone }}" name="phone" placeholder='' size='50' class='std-field-width inputDisabled' disabled="true" required/> <br><br>
+        <input type='tel' autocomplete="off" value="{{ $data->phone }}" name="phone" placeholder='' size='50' pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class='std-field-width inputDisabled' disabled="true" required/> <br><br>
         <input type='button' style='display:inline-block; float:right;' formaction="{{ route('userEdit') }}" value="Edit"/>
     </div>
     @csrf
