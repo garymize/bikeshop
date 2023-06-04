@@ -38,9 +38,9 @@ function phoneFormat($phone){
 
     $phone = cleanPhone($phone);
 
-    $areaCode  = substr(0,3,$phone);
-    $prefix    = substr(3,3,$phone);
-    $extension = substr(6,4,$phone);
+    $areaCode  = substr($phone,0,3);
+    $prefix    = substr($phone,3,3);
+    $extension = substr($phone,6,4);
 
     echo '('.$areaCode.') '.$prefix.'-'.$extension;
     
