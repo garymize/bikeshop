@@ -37,5 +37,6 @@ Route::get('/user/add/',[UsersController::class, 'new'])->name('new-add');
 Route::get('user/create',[UsersController::class, 'create']);
 Route::post('user/store',[UsersController::class, 'store']);
 Route::get('user/show',[UsersController::class, 'show']);
+Route::get('user/edit',[UsersController::class, 'edit'])->name('uesrEdit');
 
 require __DIR__.'/auth.php';
