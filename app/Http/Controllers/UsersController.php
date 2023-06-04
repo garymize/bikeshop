@@ -61,7 +61,7 @@ class UsersController extends Controller
     {
         $data = $users->first('garymize@yahoo.com');
         debug_to_console($data);
-        return view('forms.userView',['data'=>$data]);
+        return view('userView',['data'=>$data]);
     }
 
     /**
