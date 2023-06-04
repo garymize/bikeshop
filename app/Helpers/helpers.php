@@ -42,6 +42,8 @@ function phoneFormat($phone){
     $prefix    = substr(3,3,$phone);
     $extension = substr(6,4,$phone);
     
+    return $areaCode.$prefix.$extension;
+    
 }
 
 function cleanPhone($phone){
