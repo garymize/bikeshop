@@ -61,7 +61,7 @@ class UsersController extends Controller
     {
         $data = $users->where('email','garymize@yahoo.com')->firstOrFail();
         debug_to_console($data);
-        return view('userView',$data);
+        return view('userView',['data'=>$data]);
     }
 
     /**
