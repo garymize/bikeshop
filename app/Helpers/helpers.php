@@ -34,3 +34,22 @@ function debug_to_console($data) {
     echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
 }
 
+function phoneFormat($phone){
+
+    $phone = cleanPhone($phone);
+    
+    $areaCode  = substr(0,3);
+    $prefix    = substr(3,3);
+    $extension = substr(6,4);
+    
+}
+
+function cleanPhone($phone){
+    
+    $phone = str_replace('(','',$phone);
+    $phone = str_replace(')','',$phone);
+    $phone = str_replace('-','',$phone);
+    
+    return $phone;
+    
+}
