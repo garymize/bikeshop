@@ -52,7 +52,7 @@ class UsersController extends Controller
         
         $route = route('showUser',request['email']);
         
-        return $route
+        return $route;
         
         
 //        return view('profile.partials.userCreated');
