@@ -38,9 +38,9 @@ Route::get('/userform/show/',[UsersController::class, 'show'])->name('show-user'
 Route::get('/user/new/',[UsersController::class, 'new'])->name('new-user');
 Route::get('/user/add/',[UsersController::class, 'new'])->name('new-add');
 
-Route::get('user/create',[UsersController::class, 'create']);
-Route::post('user/store',[UsersController::class, 'store']);
-Route::get('user/show',[UsersController::class, 'show']);
+Route::get('user/create',[UsersController::class, 'create'])->name('createUser');
+Route::post('user/store',[UsersController::class, 'store'])->name('storeUser');
+Route::get('user/show',[UsersController::class, 'show'])->name('showUser');
 Route::get('user/edit',[UsersController::class, 'edit'])->name('userEdit');
 Route::get('user/changepw',[UsersController::class, 'chanagePW'])->name('userChangePW');
 
