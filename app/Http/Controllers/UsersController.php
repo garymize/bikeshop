@@ -50,9 +50,13 @@ class UsersController extends Controller
         $user->phone     = $request['phone'];
         $user->save();
         
+        $route = route('showUser');
+        
+        return $route;
+        
         
 //        return view('profile.partials.userCreated');
-        return redirect(route('showUser',$request['email']));
+        //return redirect(route('showUser',$request['email']));
     }
 
     /**
