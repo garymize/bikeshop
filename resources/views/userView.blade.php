@@ -33,6 +33,7 @@
         <label for='phone' class='required innerLabel'>Phone</label><br>        
         <input type='text' autocomplete="off" value="{{ phoneFormat($data->phone) }}" name="phone" placeholder='' size='50' class='std-field-width inputDisabled' disabled="true" required/> <br><br>
         <input type='button' style='display:inline-block; float:left;' onclick="window.location='{{ route('userEdit') }}'" value="Edit"/>
+        <input type='button' style='display:inline-block; float:left;' onclick="window.location='{{ route('userChangePW') }}'" value="Change PW"/>
         <input type='button' style='display:inline-block; float:right;' onclick="window.location='{{ route("home") }}'" value="Cancel"/>
     </div>
     @csrf

@@ -93,4 +93,10 @@ class UsersController extends Controller
         return view('forms.newUserForm');
         
     }
+    
+    public function changePW(){
+        
+        return view('forms.userChangePW');
+        
+    }
 }

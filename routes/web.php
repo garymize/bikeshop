@@ -42,5 +42,6 @@ Route::get('user/create',[UsersController::class, 'create']);
 Route::post('user/store',[UsersController::class, 'store']);
 Route::get('user/show',[UsersController::class, 'show']);
 Route::get('user/edit',[UsersController::class, 'edit'])->name('userEdit');
+Route::get('user/changepw',[UsersController::class, 'chanagePW'])->name('userChangePW');
 
 require __DIR__.'/auth.php';
