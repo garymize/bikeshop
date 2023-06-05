@@ -32,7 +32,8 @@
         <input type='text' autocomplete="off" value="{{ $data->email }}" name="email" placeholder='' size='50' class='std-field-width inputDisabled' disabled="true" required/> <br>
         <label for='phone' class='required innerLabel'>Phone</label><br>        
         <input type='text' autocomplete="off" value="{{ phoneFormat($data->phone) }}" name="phone" placeholder='' size='50' class='std-field-width inputDisabled' disabled="true" required/> <br><br>
-        <input type='button' style='display:inline-block; float:right;' formaction="{{ route('userEdit') }}" value="Edit"/>
+        <input type='button' style='display:inline-block; float:left;' formaction="{{ route('userEdit') }}" value="Edit"/>
+        <input type='button' style='display:inline-block; float:right;' formaction="{{ route('userCancel') }}" value="Cancel"/>
     </div>
     @csrf
 
