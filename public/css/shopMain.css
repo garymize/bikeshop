@@ -201,7 +201,7 @@ button, [type=button], [type=submit] {
     padding: 20px;
     padding-bottom: 60px;}
 
-@media (max-width: 500px){
+@media (max-width: 699px){
     .mm-header-date {
 
         display: none;
