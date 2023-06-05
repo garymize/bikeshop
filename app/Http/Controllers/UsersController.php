@@ -52,11 +52,8 @@ class UsersController extends Controller
         
         $route = route('showUser',$request['email']);
         
-        return $route;
-        
-        
 //        return view('profile.partials.userCreated');
-        //return redirect(route('showUser',$request['email']));
+        return redirect($route);
     }
 
     /**
