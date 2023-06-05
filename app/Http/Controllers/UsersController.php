@@ -52,15 +52,15 @@ class UsersController extends Controller
         
         
 //        return view('profile.partials.userCreated');
-        return redirect(route('showUser',$user));
+        return redirect(route('showUser',$request['email']));
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(users $user)
+    public function show($email)
     {
-        $data = $user->where('email',$user->email)->firstOrFail();
+        $data = $user->where('email',$email)->firstOrFail();
         debug_to_console($data);
         return view('userView',['data'=>$data]);
     }
