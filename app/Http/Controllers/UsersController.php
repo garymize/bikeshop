@@ -52,7 +52,7 @@ class UsersController extends Controller
         
         
 //        return view('profile.partials.userCreated');
-        return redirect(route('showUser'),$user);
+        return redirect(route('showUser',$user));
     }
 
     /**
