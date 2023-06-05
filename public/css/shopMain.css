@@ -171,7 +171,7 @@ button, [type=button], [type=submit] {
 .mm-container {
     box-sizing: border-box;
     position: absolute;
-    /* min-width: 1102px; */
+     min-width: 400px; 
     width: calc(100vw - 1px);
     width: -webkit-calc(100vw - -1px);
     background-color: dimgray;
