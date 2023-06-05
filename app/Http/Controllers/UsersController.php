@@ -51,7 +51,8 @@ class UsersController extends Controller
         $user->save();
         
         
-        return view('profile.partials.userCreated');
+//        return view('profile.partials.userCreated');
+        return redirect(route('show',$data));
     }
 
     /**
