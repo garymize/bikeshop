@@ -50,7 +50,7 @@ class UsersController extends Controller
         $user->phone     = $request['phone'];
         $user->save();
         
-        $route = route('showUser',request['email']);
+        $route = route('showUser',$request['email']);
         
         return $route;
         
