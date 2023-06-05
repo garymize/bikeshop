@@ -64,8 +64,9 @@ class UsersController extends Controller
      */
     public function show($email)
     {
-        $data = $user->where('email',$email)->firstOrFail();
-        debug_to_console($data);
+        
+        $user = users::where('email',$email)->firstOrFail();
+        debug_to_console($user);
         return view('userView',['data'=>$data]);
     }
 
