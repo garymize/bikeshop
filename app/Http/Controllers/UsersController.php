@@ -58,9 +58,9 @@ class UsersController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(users $users)
+    public function show(users $user)
     {
-        $data = $users->where('email',$data->email)->firstOrFail();
+        $data = $user->where('email',$user->email)->firstOrFail();
         debug_to_console($data);
         return view('userView',['data'=>$data]);
     }
