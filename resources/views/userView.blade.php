@@ -6,7 +6,7 @@
     <div>View User</div>
 @stop
 
-@section('mm-canvas)
+@section('mm-canvas')
     <div name="canvas" class="mm-canvas" style='background-color: #f7f7f7;'>
 @stop
 
