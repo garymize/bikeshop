@@ -8,8 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class users extends Model
 {
     use HasFactory;
+    use App\Traits\Encryptable:
     
     protected $table = 'users';
     protected $primaryKey = 'id';
+    
+    protected $encryptable = [
+        'password'
+    ];
     
 }
