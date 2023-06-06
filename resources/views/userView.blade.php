@@ -7,7 +7,7 @@
 @stop
 
 @section('mm-canvas')
-    <div name="canvas" class="mm-canvas" style='background-color: #f7f7f7;'>
+    <div name="canvas" class="mm-canvas" style="background-color: #f7f7f7;">
 @stop
 
 @section('mm-content')
