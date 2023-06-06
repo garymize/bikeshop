@@ -61,19 +61,25 @@ class UsersController extends Controller
      */
     public function show($email)
     {
-        
         $user = users::where('email',$email)->firstOrFail();
         debug_to_console($user);
         return view('userView',['data'=>$user]);
     }
 
+    public function edit($email)
+    {
+        $user = users::where('email',$email)->firstOrFail();
+        debug_to_console($user);
+        return view('userEditForm',['data'=>$user]);
+    }
+
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(users $users)
-    {
-        return view('forms.userForm');
-    }
+//    public function edit(users $users)
+//    {
+//        return view('forms.userEditForm');
+//    }
 
     /**
      * Update the specified resource in storage.
