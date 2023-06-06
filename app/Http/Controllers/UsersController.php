@@ -42,12 +42,12 @@ class UsersController extends Controller
         ]);
         
         $user = new users();
-        $user->name      = $request['firstname'].' '.$request['lastname'];
-        $user->firstname = $request['firstname'];
-        $user->lastname  = $request['lastname'];
-        $user->password  = $request['password'];
-        $user->email     = $request['email'];
-        $user->phone     = cleanPhone($request['phone']);
+        $user->name      = trim($request['firstname'].' '.$request['lastname']);
+        $user->firstname = trim($request['firstname']);
+        $user->lastname  = trim($request['lastname']);
+        $user->password  = trim($request['password']);
+        $user->email     = trim($request['email']);
+        $user->phone     = trim(cleanPhone($request['phone']));
         $user->save();
         
         $route = route('showUser',$request['email']);
@@ -64,12 +64,12 @@ class UsersController extends Controller
         ]);
         
         $user = users::where('email',$request['email'])->firstOrFail();
-        $user->name      = $request['firstname'].' '.$request['lastname'];
-        $user->firstname = $request['firstname'];
-        $user->lastname  = $request['lastname'];
+        $user->name      = trim($request['firstname'].' '.$request['lastname']);
+        $user->firstname = trim($request['firstname']);
+        $user->lastname  = trim($request['lastname']);
 //        $user->password  = $request['password'];
-        $user->email     = $request['email'];
-        $user->phone     = cleanPhone($request['phone']);
+        $user->email     = trim($request['email']);
+        $user->phone     = trim(cleanPhone($request['phone']));
         $user->save();
         
         $route = route('showUser',$request['email']);
