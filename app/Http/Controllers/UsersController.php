@@ -47,7 +47,7 @@ class UsersController extends Controller
         $user->lastname  = $request['lastname'];
         $user->password  = $request['password'];
         $user->email     = $request['email'];
-        $user->phone     = $request['phone'];
+        $user->phone     = cleanPhone($request['phone']);
         $user->save();
         
         $route = route('showUser',$request['email']);
