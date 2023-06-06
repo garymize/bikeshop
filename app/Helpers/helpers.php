@@ -51,6 +51,7 @@ function cleanPhone($phone){
     $phone = str_replace('(','',$phone);
     $phone = str_replace(')','',$phone);
     $phone = str_replace('-','',$phone);
+    $phone = str_replace(' ','',$phone);
     
     return $phone;
     
