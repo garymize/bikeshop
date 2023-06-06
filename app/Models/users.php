@@ -15,6 +15,11 @@ class users extends Model
     protected $table = 'users';
     protected $primaryKey = 'id';
     
+    public function setpasswordAttribute($value)
+    {
+        $this->attributes['password'] = Crypt::encryptString($value);
+    }
+    
     public function getpasswordAttribute($value)
     {
         try {
