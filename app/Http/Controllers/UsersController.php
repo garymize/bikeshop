@@ -6,7 +6,6 @@ use App\Http\Requests\StoreusersRequest;
 use App\Http\Requests\UpdateusersRequest;
 use App\Models\users;
 use Illuminate\View\View;
-use Illuminate\Support\Facades\Crypt;
 
 
 class UsersController extends Controller
