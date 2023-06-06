@@ -1,9 +1,9 @@
 @extends('layouts.formsLayout') 
 
-@section('title', 'View User')
+@section('title', 'Edit User')
 
 @section('mm-header')
-    <div>View User</div>
+    <div>Edit User</div>
 @stop
 
 @section('mm-content')
