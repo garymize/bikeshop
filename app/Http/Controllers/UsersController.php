@@ -70,7 +70,7 @@ class UsersController extends Controller
     {
         $user = users::where('email',$email)->firstOrFail();
         debug_to_console($user);
-        return view('userEditForm',['data'=>$user]);
+        return view('forms.userEditForm',['data'=>$user]);
     }
 
     /**
