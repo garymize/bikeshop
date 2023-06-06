@@ -33,7 +33,7 @@
             <input type='text' autocomplete="off" value="{{ $data->email }}" name="email" placeholder='' size='50' class='std-field-width' disabled="false" required/> <br>
             <label for='phone' class='required innerLabel'>Phone</label><br>        
             <input type='text' autocomplete="off" value="{{ phoneFormat($data->phone) }}" name="phone" placeholder='' size='50' class='std-field-width' disabled="false" required/> <br><br>
-            <input type='submit' style='display:inline-block; float:left; margin-right:10px;' onclick="window.location='{{ route('userStore') }}'" value="Save"/>
+            <input type='submit' style='display:inline-block; float:left; margin-right:10px;' value="Save"/>
             <input type='button' style='display:inline-block; float:right;' onclick="window.location='{{ url()->previous() }}'" value="Cancel"/>
         </form>
     </div>
