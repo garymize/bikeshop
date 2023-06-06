@@ -6,8 +6,8 @@
     <div>View User</div>
 @stop
 
-@section('mm-canvas')
-    <div name="canvas" class="mm-canvas" style="background-color: #f7f7f7;">
+@section('mm-canvasColor')
+    style="background-color: #f7f7f7;"
 @stop
 
 @section('mm-content')
