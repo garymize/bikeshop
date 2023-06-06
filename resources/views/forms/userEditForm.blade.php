@@ -22,7 +22,7 @@
     <div>
         <form action='/user/store' method='post'>
             <label for='firstname' class='required innerLabel'>First Name</label><br>
-            <input type='text' autocomplete="off" value="{{ $data->firstname }}" name="firstname" placeholder='' size='50' class='std-field-width' disabled="false" required/> <br>
+            <input type='text' autocomplete="off" value="{{ $data->firstname }}" name="firstname" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='lastname' class='required innerLabel'>Last Name</label><br>
             <input type='text' autocomplete="off" value="{{ $data->lastname }}" name="lastname" placeholder='' size='50' class='std-field-width' disabled="false" required/> <br>
             <!--<label for='password' class='required innerLabel'>Password</label><br>-->        
