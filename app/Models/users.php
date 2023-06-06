@@ -9,7 +9,7 @@ use \App\Traits\Encryptable;
 class users extends Model
 {
     use HasFactory;
-    //use Encryptable;
+    use Encryptable;
     
     protected $table = 'users';
     protected $primaryKey = 'id';
