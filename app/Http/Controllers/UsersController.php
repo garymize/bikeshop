@@ -49,7 +49,7 @@ class UsersController extends Controller
         $user->name      = trim($request['firstname'].' '.$request['lastname']);
         $user->firstname = trim($request['firstname']);
         $user->lastname  = trim($request['lastname']);
-        $user->password  = Crypt::encryptString(trim($request['password']));
+        $user->password  = trim($request['password']);
         $user->email     = trim($request['email']);
         $user->phone     = trim(cleanPhone($request['phone']));
         $user->save();
