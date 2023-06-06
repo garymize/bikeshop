@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 //use \App\Traits\Encryptable;
+use Illuminate\Support\Facades\Crypt;
 
 class users extends Model
 {
