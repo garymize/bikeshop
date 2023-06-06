@@ -63,7 +63,7 @@ class UsersController extends Controller
             'phone' => 'required',
         ]);
         
-        $user = users::where('email',$email)->firstOrFail();
+        $user = users::where('email',$request['email'])->firstOrFail();
         $user->name      = $request['firstname'].' '.$request['lastname'];
         $user->firstname = $request['firstname'];
         $user->lastname  = $request['lastname'];
