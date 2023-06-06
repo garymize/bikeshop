@@ -43,7 +43,7 @@
     <div class='mm-header-date'><p style='color:dimgray; padding-right: 5px'>{{ prettyDateTime() }} - <span id='ct' ></span></p></div>
     <body onload=display_ct();>
         <div class='mm-container'>
-            <div name="canvas" class="mm-canvas" @yield('mm-canvasColor',''>
+            <div name="canvas" class="mm-canvas" @yield('mm-canvasColor','')>
                 <div class='mm-center mm-header'>
                     @yield('mm-header')
                 </div>
