@@ -20,7 +20,7 @@
 
 
     <div>
-        <form action='/user/store' method='post'>
+        <form action='/user/update' method='post'>
             <label for='firstname' class='required innerLabel'>First Name</label><br>
             <input type='text' autocomplete="off" value="{{ $data->firstname }}" name="firstname" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='lastname' class='required innerLabel'>Last Name</label><br>

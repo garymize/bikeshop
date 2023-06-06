@@ -56,6 +56,28 @@ class UsersController extends Controller
         return redirect($route);
     }
 
+    public function update(UpdateusersRequest $request, users $users)
+    {
+        $this->validate($request,[
+            'email' => 'bail|required',
+            'phone' => 'required',
+        ]);
+        
+        $user = users::where('email',$email)->firstOrFail();
+        $user->name      = $request['firstname'].' '.$request['lastname'];
+        $user->firstname = $request['firstname'];
+        $user->lastname  = $request['lastname'];
+        $user->password  = $request['password'];
+        $user->email     = $request['email'];
+        $user->phone     = $request['phone'];
+        $user->save();
+        
+        $route = route('showUser',$request['email']);
+        
+//        return view('profile.partials.userCreated');
+        return redirect($route);
+    }
+
     /**
      * Display the specified resource.
      */
@@ -84,10 +106,10 @@ class UsersController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateusersRequest $request, users $users)
-    {
-        //
-    }
+//    public function update(UpdateusersRequest $request, users $users)
+//    {
+//        //
+//    }
 
     /**
      * Remove the specified resource from storage.
