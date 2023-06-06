@@ -14,8 +14,8 @@ class users extends Model
     protected $table = 'users';
     protected $primaryKey = 'id';
     
-//    protected $encryptable = [
-//        'password'
-//    ];
+    protected $encryptable = [
+
+    ];
     
 }
