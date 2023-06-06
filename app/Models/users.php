@@ -14,6 +14,15 @@ class users extends Model
     protected $table = 'users';
     protected $primaryKey = 'id';
     
+    public function getpasswordAttribute($value)
+    {
+        try {
+            return Crypt::decryptString($value);
+        } catch (\Exception $e) {
+            return $value;
+        }
+    }
+    
 //    protected $encryptable = [
 //        'password'
 //    ];
