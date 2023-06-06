@@ -6,6 +6,8 @@ use App\Http\Requests\StoreusersRequest;
 use App\Http\Requests\UpdateusersRequest;
 use App\Models\users;
 use Illuminate\View\View;
+use Illuminate\Support\Facades\Crypt;
+
 
 class UsersController extends Controller
 {
@@ -41,11 +43,13 @@ class UsersController extends Controller
             'phone' => 'required',
         ]);
         
+        
+        
         $user = new users();
         $user->name      = trim($request['firstname'].' '.$request['lastname']);
         $user->firstname = trim($request['firstname']);
         $user->lastname  = trim($request['lastname']);
-        $user->password  = trim($request['password']);
+        $user->password  = Crypt::encryptString(trim($request['password']));
         $user->email     = trim($request['email']);
         $user->phone     = trim(cleanPhone($request['phone']));
         $user->save();
