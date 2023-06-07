@@ -28,9 +28,9 @@
 
             <label for='currentpassword' class='required innerLabel'>Current Password</label><br>        
             <input type='password' autocomplete="off" name="currentpassword" placeholder='' size='50' class='std-field-width' required/> <br>
-            <label for='password' class='required innerLabel'>Password</label><br>        
+            <label for='password' class='required innerLabel'>New Password</label><br>        
             <input type='password' autocomplete="off" name="password" placeholder='' size='50' class='std-field-width' required/> <br>
-            <label for='confirmpassword' class='required innerLabel'>Confirm Password</label><br>        
+            <label for='confirmpassword' class='required innerLabel'>Confirm New Password</label><br>        
             <input type='password' autocomplete="off" name="confirmpassword" placeholder='' size='50' class='std-field-width' required/> <br>
 
             <label for='email' class='innerLabel'>Email</label><br>        
