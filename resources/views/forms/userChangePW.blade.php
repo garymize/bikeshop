@@ -20,7 +20,7 @@
 
 
     <div>
-        <form action='/user/updatenewpw' method='post'>
+        <form action='/user/updatenewpw/{{$data->email}}' method='post'>
             <label for='firstname' class='innerLabel'>First Name</label><br>
             <input type='text' autocomplete="off" value="{{ $data->firstname }}" name="firstname" placeholder='' size='50' class='display-only-input std-field-width inputDisabled' disabled="true"/> <br>
             <label for='lastname' class='innerLabel'>Last Name</label><br>
