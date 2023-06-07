@@ -134,4 +134,23 @@ class UsersController extends Controller
         return view('forms.userChangePW',['data'=>$user]);
         
     }
+    
+    public function updateNewPW(StoreusersRequest $request){
+        
+        $this->validate($request,[
+//            'email' => 'bail|required',
+//            'phone' => 'required',
+        ]);
+        
+        $user = users::where('email',$request['email'])->firstOrFail();
+        $user->password = trim($request['password']);
+        $user->save();
+        
+        $route = route('showUser',$request['email']);
+        
+//        return view('profile.partials.userCreated');
+        return redirect($route);
+        
+        
+    }
 }
