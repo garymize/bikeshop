@@ -128,9 +128,10 @@ class UsersController extends Controller
         
     }
     
-    public function changePW(){
+    public function changePW($email){
         
-        return view('forms.userChangePW');
+        $user = users::where('email',$email)->firstOrFail();
+        return view('forms.userChangePW',['data'=>$user]);
         
     }
 }
