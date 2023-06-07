@@ -142,11 +142,11 @@ class UsersController extends Controller
 //            'phone' => 'required',
         ]);
         
-        $user = users::where('email',$request['email'])->firstOrFail();
+        $user = users::where('email',$email)->firstOrFail();
         $user->password = trim($request['password']);
         $user->save();
         
-        $route = route('showUser',$request['email']);
+        $route = route('showUser',$email);
         
 //        return view('profile.partials.userCreated');
         return redirect($route);
