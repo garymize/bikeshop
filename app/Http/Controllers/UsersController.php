@@ -135,7 +135,7 @@ class UsersController extends Controller
         
     }
     
-    public function updateNewPW($email){
+    public function updateNewPW(StoreusersRequest $request, $email){
         
         $this->validate($request,[
 //            'email' => 'bail|required',
