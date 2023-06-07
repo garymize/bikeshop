@@ -27,7 +27,7 @@
             <input type='text' autocomplete="off" value="{{ $data->lastname }}" name="lastname" placeholder='' size='50' class='std-field-width inputDisabled' disabled="true"/> <br>
 
             <label for='currentpassword' class='required innerLabel'>Current Password</label><br>        
-            <input type='currentpassword' autocomplete="off" name="currentpassword" placeholder='' size='50' class='std-field-width' required/> <br>
+            <input type='password' autocomplete="off" name="currentpassword" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='password' class='required innerLabel'>Password</label><br>        
             <input type='password' autocomplete="off" name="password" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='confirmpassword' class='required innerLabel'>Confirm Password</label><br>        
