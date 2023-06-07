@@ -210,3 +210,7 @@ button, [type=button], [type=submit] {
 
     }
 }
+
+.display-only-input {
+    background-color: transparent;
+}
