@@ -38,12 +38,12 @@ Route::get('/userform/show/',[UsersController::class, 'show'])->name('show-user'
 Route::get('/user/new/',[UsersController::class, 'new'])->name('new-user');
 Route::get('/user/add/',[UsersController::class, 'new'])->name('new-add');
 
+Route::post('user/updatenewpw/{email}',[UsersController::class, 'updateNewPW'])->name('userUpdateNewPW');
 Route::get('user/create',[UsersController::class, 'create'])->name('createUser');
 Route::post('user/store',[UsersController::class, 'store'])->name('storeUser');
 Route::post('user/update',[UsersController::class, 'update'])->name('updateUser');
 Route::get('user/show/{email}',[UsersController::class, 'show'])->name('showUser');
 Route::get('user/edit/{email}',[UsersController::class, 'edit'])->name('userEdit');
 Route::get('user/changepw/{email}',[UsersController::class, 'changePW'])->name('userChangePW');
-Route::post('user/updatenewpw/{email}',[UsersController::class, 'updateNewPW'])->name('userUpdateNewPW');
 
 require __DIR__.'/auth.php';
