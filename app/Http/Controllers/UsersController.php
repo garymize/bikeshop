@@ -148,7 +148,7 @@ class UsersController extends Controller
         $user->password = trim($request['password']);
         $user->save();
         
-        $route = route('showUser','garymize22@yahoo.com');
+        $route = route('showUser',$mail);
         
 //        return view('profile.partials.userCreated');
         return redirect($route);
