@@ -111,6 +111,8 @@ if (isset($message)){
 
 ?>
 
+    <script type='text/javascript' src='/js/slm.js'></script>
+
     <!-- doOnLoad() is in header.php -->
     <body onload="loginPage(true); doOnLoad();">
     
