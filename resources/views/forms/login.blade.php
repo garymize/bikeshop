@@ -81,7 +81,7 @@ if (isset($_GET['validation'])){
 //****************BEGIN HTML HEAD TAG *******************************************************************
 ////require("igs_header.php");
 
-echo '  <link rel="stylesheet" type="text/css" href="lib/styles/igsDialog.css">';
+echo '  <link rel="stylesheet" type="text/css" href="/css/igsDialog.css">';
 
 
 // set url path as JS global - see slm.js
