@@ -111,18 +111,6 @@ if (isset($message)){
 
 ?>
 
-
-<script>
-
-
-        var browserName = navigator.appName;
-        if (browserName=="Microsoft Internet Explorer"){
-            window.location.replace("iebrowser.html");
-        }
-
-
-</script>
-
     <!-- doOnLoad() is in header.php -->
     <body onload="loginPage(true); doOnLoad();">
     
