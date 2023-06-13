@@ -121,7 +121,7 @@ if (isset($message)){
         <div id="igsDialog"></div>
         <!-- ******************************** top of page -->
         <div id="banner" class="banner">
-            <div id="logo" class="logo" ><img src="lib/images/IGS-NewLogo-Acronym.png" style="height: 50px; width: 100px; padding-left: 25px; margin-top: 10px; margin-bottom: 10px;"/>
+            <!--<div id="logo" class="logo" ><img src="lib/images/IGS-NewLogo-Acronym.png" style="height: 50px; width: 100px; padding-left: 25px; margin-top: 10px; margin-bottom: 10px;"/>-->
             <div id="banner-right" class="banner-right">
                 <div id="user_name_display" class="user_name_display"></div>
                 <!--<div id="logged_in_as" class="logged_in_as"></div>-->
