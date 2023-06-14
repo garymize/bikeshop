@@ -25,8 +25,8 @@
             <input type='text' name="username" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='password' class='required innerLabel'>Password</label><br>        
             <input type='password' name="password" placeholder='' size='50' class='std-field-width' required/> <br><br>
-            <input type='submit' style='display:inline-block; float:left;' value="Login"/>
-            <input type='button' style='display:inline-block; float:right;' formaction="{{ route('dashboard') }}" value="Cancel"/>
+            <div style='webkit-justify-content: center;'><input type='submit' value="Login"/></div>
+            <!--<input type='button' style='display:inline-block; float:right;' formaction="{{ route('dashboard') }}" value="Cancel"/>-->
         </form>
     </div>
     @csrf
