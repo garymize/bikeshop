@@ -149,6 +149,12 @@ button, [type=button], [type=submit] {
     font-size: 13px;
 }
 
+.login-button {
+    -webkit-justify-content: center; 
+    line-height: 47px; 
+    font-size: 33px;
+}
+
 .mm-header {
     min-height: 50px;
     width: 100%;    font-size: 24px;
