@@ -138,7 +138,7 @@ input[type=text], input[type=password], input[type=tel], select
     opacity: 1.0;
 }
 
-.innerLabel {
+.innerLabelx {
     margin-top: 18px;
     position: absolute;
     margin-left: 4px;
@@ -157,9 +157,9 @@ button, [type=button], [type=submit] {
 
 .three-d-button {
   position: relative;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(251, 246, 246, 1);
   text-decoration: none;
-  background-color: rgba(219, 87, 5, 1);
+  background-color: rgba(233, 10, 10, 1);
   font-family: 'Yanone Kaffeesatz';
   font-weight: 700;
   font-size: 3em;
@@ -168,9 +168,9 @@ button, [type=button], [type=submit] {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  -webkit-box-shadow: 0px 9px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
-  -moz-box-shadow: 0px 9px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
-  box-shadow: 0px 9px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+  -webkit-box-shadow: 5px 9px 5px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+  -moz-box-shadow: 0px 9px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, 0.7);
+  box-shadow: 5px 9px 5px rgba(25, 24, 24, 1), 0px 9px 25px rgba(0, 0, 0, .7);
   margin: 100px auto;
   width: 160px;
   text-align: center;
