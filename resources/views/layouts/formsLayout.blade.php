@@ -1,3 +1,9 @@
+<?php
+    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+    header("Cache-Control: post-check=0, pre-check=0", false);
+    header("Pragma: no-cache");
+?>
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }} style="--vh: 8.2px; background-color: #f7f7f7">
     <head>
@@ -37,12 +43,7 @@
         document.getElementById('ct').innerHTML = x;
         display_c();
     }
-</script>
-<?php
-    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-    header("Cache-Control: post-check=0, pre-check=0", false);
-    header("Pragma: no-cache");
-?>
+    </script>
     </head>
     <div class='mm-title-logo' style='width: 386px;'><img src='/images/dhc-logo.webp' width='35px'/><span style='color:#A80000'> Devils Head Choppers</span></div>
     <div class='mm-header-date'><p style='color:dimgray; padding-right: 5px'>{{ prettyDateTime() }} - <span id='ct' ></span></p></div>
