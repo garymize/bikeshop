@@ -4,13 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header('Cache-Control: no-store, private, no-cache, must-revalidate');     // HTTP/1.1
-        header('Cache-Control: pre-check=0, post-check=0, max-age=0, max-stale = 0', false);  // HTTP/1.1
-        header('Pragma: public');
-        header('Expires: Sat, 26 Jul 1997 05:00:00 GMT');                  // Date in the past  
-        header('Expires: 0', false); 
-        header('Last-Modified: '.gmdate('D, d M Y H:i:s') . ' GMT');
-        header ('Pragma: no-cache');
         <title>App Name - @yield('title')</title>
 
         <!-- Fonts -->
@@ -45,6 +38,11 @@
         display_c();
     }
 </script>
+<?php
+    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+    header("Cache-Control: post-check=0, pre-check=0", false);
+    header("Pragma: no-cache");
+?>
     </head>
     <div class='mm-title-logo' style='width: 386px;'><img src='/images/dhc-logo.webp' width='35px'/><span style='color:#A80000'> Devils Head Choppers</span></div>
     <div class='mm-header-date'><p style='color:dimgray; padding-right: 5px'>{{ prettyDateTime() }} - <span id='ct' ></span></p></div>
