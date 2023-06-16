@@ -150,7 +150,7 @@ button, [type=button], [type=submit] {
 }
 
 .login-button {
-    -webkit-justify-content: center; 
+    /*-webkit-justify-content: center;*/ 
     line-height: 47px; 
     font-size: 33px;
 }
