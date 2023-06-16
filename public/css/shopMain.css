@@ -144,17 +144,6 @@ input[type=text], input[type=password], input[type=tel], select
     margin-left: 4px;
 }
 
-button, [type=button], [type=submit] {
-    line-height: 20px;
-    font-size: 13px;
-}
-
-.login-button {
-    -webkit-justify-content: center;
-    line-height: 47px;
-    font-size: 33px;
-}
-
 .three-d-button {
   position: relative;
   color: rgba(255, 255, 255, 1);
@@ -181,6 +170,16 @@ button, [type=button], [type=submit] {
   transition: all .1s ease;
 }
 
+button, [type=button], [type=submit] {
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.login-button {
+    -webkit-justify-content: center;
+    line-height: 47px;
+    font-size: 33px;
+}
 
 .mm-header {
     min-height: 50px;
