@@ -23,10 +23,10 @@ Route::post('/userAuth',[UsersController::class, 'userAuth'])->name('authUser');
 
 Route::get('/', function () {
     return view('home');
-})->name('home')->middleware('auth');
+})->name('home');
 
 Route::get('/home', function () {
-    return view('home')->middleware('auth');
+    return view('home');
 });
 
 Route::get('/dashboard', function () {
