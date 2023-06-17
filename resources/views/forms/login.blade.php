@@ -20,7 +20,8 @@
 
 
     <div>
-        <form action='/user/store' method='post'>
+        <!--<form action='/user/store' method='post'>-->
+        <form method="POST" action="{{ route('login') }}">
             <label for='username' class='required innerLabel'>User Name</label><br>
             <input type='text' name="username" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='password' class='required innerLabel'>Password</label><br>        
