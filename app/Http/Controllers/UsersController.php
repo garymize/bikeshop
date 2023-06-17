@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Requests\StoreusersRequest;
 use App\Http\Requests\UpdateusersRequest;
 use App\Models\users;
@@ -156,7 +157,7 @@ class UsersController extends Controller
         
     }
     
-    public function userAuth($request, users $users)
+    public function userAuth(LoginRequest $request, users $users)
     {
         $this->validate($request,[
             'email' => 'bail|required',

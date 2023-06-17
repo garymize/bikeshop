@@ -22,7 +22,7 @@ require __DIR__.'/auth.php';
 //Route::post('/userAuth',[UsersController::class, 'userAuth'])->name('authUser');
 Route::post('/userAuth', function () {
     return view('home');
-})->name('authUser');
+})->name('authUser')->middleware('auth');
 
 Route::get('/', function () {
     return view('home');
