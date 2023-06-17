@@ -39,6 +39,9 @@ class LoginRequest extends FormRequest
      */
     public function authenticate(): void
     {
+
+        debug_to_console('authenticate');
+        
         $this->ensureIsNotRateLimited();
 
         if (! Auth::attempt($this->only('email', 'password'), $this->boolean('remember'))) {
@@ -59,6 +62,9 @@ class LoginRequest extends FormRequest
      */
     public function ensureIsNotRateLimited(): void
     {
+        
+        debug_to_console('ensureIsNotRateLimited');
+        
         if (! RateLimiter::tooManyAttempts($this->throttleKey(), 5)) {
             return;
         }
@@ -80,6 +86,9 @@ class LoginRequest extends FormRequest
      */
     public function throttleKey(): string
     {
+        
+        debug_to_console('throttleKey');
+        
         return Str::transliterate(Str::lower($this->input('email')).'|'.$this->ip());
     }
 }
