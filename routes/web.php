@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__.'/auth.php';
 
-Route::post('/userAuth[UsersController::class, 'userAuth'])->name('authUser');
+Route::post('/userAuth',[UsersController::class, 'userAuth'])->name('authUser');
 
 Route::get('/', function () {
     return view('home');
