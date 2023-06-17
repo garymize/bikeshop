@@ -156,7 +156,7 @@ class UsersController extends Controller
         
     }
     
-    public function useAuth(LoginRequest $request, users $users)
+    public function useAuth($request, users $users)
     {
         $this->validate($request,[
             'email' => 'bail|required',
