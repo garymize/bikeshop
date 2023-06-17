@@ -21,10 +21,10 @@ require __DIR__.'/auth.php';
 
 Route::get('/', function () {
     return view('home');
-})->name('home');
+})->name('home')->middleware('auth');
 
 Route::get('/home', function () {
-    return view('home');
+    return view('home')->middleware('auth');
 });
 
 Route::get('/dashboard', function () {
