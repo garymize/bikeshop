@@ -52,4 +52,4 @@ Route::middleware(['auth'])->group(function () {
     Route::post('user/updatenewpw/{email}',[UsersController::class, 'updateNewPW'])->name('userUpdateNewPW');
 });
 
-Route::get('user/changepw/{email}',[UsersController::class, 'changePW'])->name('userChangePW');
+Route::get('user/changepw/{email}',[UsersController::class, 'changePW'])->name('userChangePW')->middleware('auth');
