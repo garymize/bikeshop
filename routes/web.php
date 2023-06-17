@@ -19,7 +19,10 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__.'/auth.php';
 
-Route::post('/userAuth',[UsersController::class, 'userAuth'])->name('authUser');
+//Route::post('/userAuth',[UsersController::class, 'userAuth'])->name('authUser');
+Route::post('/userAuth', function () {
+    return view('home');
+})->name('authUser');
 
 Route::get('/', function () {
     return view('home');
@@ -29,9 +32,9 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+//Route::get('/dashboard', function () {
+//    return view('dashboard');
+//})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
