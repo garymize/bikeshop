@@ -16,6 +16,7 @@ class LoginRequest extends FormRequest
      */
     public function authorize(): bool
     {
+        debug_to_console('authorize');
         return true;
     }
 
@@ -26,6 +27,7 @@ class LoginRequest extends FormRequest
      */
     public function rules(): array
     {
+        debug_to_console('rules');
         return [
             'email' => ['required', 'string', 'email'],
             'password' => ['required', 'string'],
