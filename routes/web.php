@@ -45,7 +45,7 @@ Route::post('user/store',[UsersController::class, 'store'])->name('storeUser');
 Route::post('user/update',[UsersController::class, 'update'])->name('updateUser');
 Route::get('user/show/{email}',[UsersController::class, 'show'])->name('showUser');
 Route::get('user/edit/{email}',[UsersController::class, 'edit'])->name('userEdit');
-Route::get('user/changepw/{email}',[UsersController::class, 'changePW'])->name('userChangePW');
+Route::get('user/changepw/{email}',['middleware' => 'auth',UsersController::class, 'changePW'])->name('userChangePW');
 Route::post('user/updatenewpw/{email}',[UsersController::class, 'updateNewPW'])->name('userUpdateNewPW');
 
 require __DIR__.'/auth.php';
