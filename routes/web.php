@@ -25,6 +25,11 @@ Route::post('/userAuth', function () {
     return view('home');
 })->name('authUser')->middleware('auth');
 
+Route::post('/userLogin', function () {
+    debug_to_console('userLogin');
+    return view('forms.login');
+})->name('userLogin')->middleware('auth');
+
 Route::get('/', function () {
     debug_to_console('"/" root');
     return view('home');

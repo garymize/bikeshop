@@ -18,8 +18,7 @@ class AuthenticatedSessionController extends Controller
     public function create(): View
     {
         debug_to_console('AuthenticatedSessionController - forms.login');
-        //return view('forms.login');
-        return view('forms.newUserForm');
+        return view('forms.login');
     }
 
     /**
