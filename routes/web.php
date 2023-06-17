@@ -25,7 +25,7 @@ Route::post('/userAuth', function () {
     return view('home');
 })->name('authUser')->middleware('auth');
 
-Route::post('/userLogin', function () {
+Route::get('/userLogin', function () {
     debug_to_console('userLogin');
     return view('forms.login');
 })->name('userLogin');
