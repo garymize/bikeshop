@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +21,7 @@ use App\Http\Controllers\LoginController;
 require __DIR__.'/auth.php';
 
 //Route::post('/userAuth',[UsersController::class, 'userAuth'])->name('authUser');
-Route::post('/userAuth',[LoginController::class,'authenticate'])->name('authUser');
+Route::post('/userAuth',[Auth.LoginController::class,'authenticate'])->name('authUser');
 
 Route::match(['get','post'],'/userLogin', function () {
     debug_to_console('userLogin');
