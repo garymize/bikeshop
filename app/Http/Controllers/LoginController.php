@@ -26,7 +26,10 @@ class LoginController extends Controller
  
             return redirect()->intended('dashboard');
         }
- 
+
+        debug_to_console('login fail');
+        debug_to_console($request->email);
+        
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
         ])->onlyInput('email');
