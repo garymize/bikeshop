@@ -17,7 +17,7 @@ class LoginController extends Controller
         debug_to_console($request);
         
         $credentials = $request->validate([
-            'email' => ['required', 'email'],
+            //'email' => ['required', 'email'],
             'password' => ['required'],
         ]);
  

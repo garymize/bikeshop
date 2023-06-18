@@ -24,7 +24,7 @@ require __DIR__.'/auth.php';
 Route::post('/userAuth',[LoginController::class,'authenticate'])->name('authUser');
 
 Route::match(['get','post'],'/userLogin', function () {
-    debug_to_console('userLogin');
+    debug_to_console('userLogin route');
     return view('forms.login');
 })->name('userLogin');
 
