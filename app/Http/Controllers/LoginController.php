@@ -32,6 +32,8 @@ class LoginController extends Controller
         debug_to_console($request->email);
         Log::debug('login fail');
         Log::debug($request->email);
+        Log::info('login fail');
+        Log::info($request->email);
         
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
