@@ -13,6 +13,7 @@ class LoginController extends Controller
      */
     public function authenticate(Request $request): RedirectResponse
     {
+        debug_to_console('authenticate');
         debug_to_console($request);
         
         $credentials = $request->validate([
