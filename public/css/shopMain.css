@@ -121,7 +121,7 @@ input[type=text], input[type=password], input[type=tel], select
     background-color: #f7f7f7;
     /*border: solid 1px lightgray;*/
     /*border-style: solid;*/
-    border: none;
+    /*border: none;*/
     padding: 11px 2px 0px 4px;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
