@@ -23,7 +23,7 @@
         <!--<form action='/user/store' method='post'>-->
         <form method="POST" action="{{ route('authUser') }}">
             <label for='email' class='required innerLabel'>Email</label><br>
-            <input type='text' name="email" placeholder='' size='50' class='std-field-width' required/> <br>
+            <input type='text' name="email" placeholder='' size='50' class='std-field-width' style='font-size: 21px;' required/> <br>
             <label for='password' class='required innerLabel'>Password</label><br>        
             <input type='password' name="password" placeholder='' size='50' class='std-field-width' required/> <br><br>
             <input type='submit' value="Login" class="three-d-button" style="line-height: 38px; font-size: 28px; margin:0 auto; display: block; margin-top: 20px; border-color:white; border-width: thin;"/>
