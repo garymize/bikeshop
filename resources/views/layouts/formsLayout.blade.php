@@ -20,8 +20,8 @@
 
         <!-- Styles -->
         
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" type="text/css" href="/css/tooltipster.main.min.css" />
+        <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="/css/tooltipster.main.min.css" />-->
         <!--<link rel="stylesheet" type="text/css" href="/css/igs.css" />-->
         <link rel="stylesheet" type="text/css" href="/css/shopMain.css" />
         <!--<link rel="stylesheet" type="text/css" href="/css/slm.css" />-->

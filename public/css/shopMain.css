@@ -57,12 +57,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background: transparent;
 }
 
-/*body,table,td,th,input,textarea,select
+body,table,td,th,input,textarea,select
 {
-    font-family: Verdana sans-serif;
+    /*font-family: Verdana sans-serif;*/
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
-}*/
+}
 
 .mm-title-logo {
     font-size: 28px;
@@ -116,18 +116,18 @@ body {
   color: red;
 }
 
-/*input[type=text], input[type=password], input[type=tel], select 
+input[type=text], input[type=password], input[type=tel], select 
 {    	    	
     background-color: #f7f7f7;
-    border: solid 1px lightgray;
-    border-style: solid;
-    border: none;
+    /*border: solid 1px lightgray;*/
+    /*border-style: solid;*/
+    /*border: none;*/
     padding: 11px 2px 0px 4px;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
     line-height: 31px;	
-}*/
+}
 
 .std-field-width {
     width: 100%;
