@@ -1,23 +1,4 @@
 
-@section('title', 'Login')
-
-@section('mm-header')
-    <div>Login</div>
-@stop
-
-@section('mm-content')
-
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li style='color:red;'>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
-
-
     <div>
         <!--<form action='/user/store' method='post'>-->
         <form method="POST" action="{{ route('authUser') }}">
