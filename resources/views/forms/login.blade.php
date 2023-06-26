@@ -1,4 +1,3 @@
-@extends('layouts.formsLayout') 
 
 @section('title', 'Login')
 
