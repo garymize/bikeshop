@@ -1,35 +1,32 @@
-@extends('layouts.formsLayout') 
+<!DOCTYPE html>
+<html 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-@section('title', 'Login')
+        <title>@yield('title')</title>
 
-@section('mm-header')
-    <div>Login</div>
-@stop
+        <!-- Fonts -->
 
-@section('mm-content')
-
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li style='color:red;'>{{ $error }}</li>
-                @endforeach
-            </ul>
+        <!-- Styles -->
+        
+        <link rel="stylesheet" type="text/css" href="/css/shopMain.css" />
+        
+        <!-- Scripts -->
+        
+    </head>
+    <body>
+        <div class='mm-container'>
+            <div name="canvas" class="mm-canvas" @yield('mm-canvasColor','')>
+                <!--<form action='/user/store' method='post'>-->
+                <form method="POST" action="/">
+                    <label for='email' class='required innerLabel'>Email</label><br>
+                    <input type='text' name="email" placeholder='' size='50' class='std-field-width' required/> <br>
+                    <label for='password' class='required innerLabel'>Password</label><br>        
+                    <input type='password' name="password" placeholder='' size='50' class='std-field-width' required/> <br><br>
+                    <input type='submit' value="Login" class="three-d-button" style="line-height: 38px; font-size: 28px; margin:0 auto; display: block; margin-top: 20px; border-color:white; border-width: thin;"/>
+                </form>
+            </div>
         </div>
-    @endif
-
-
-    <div>
-        <!--<form action='/user/store' method='post'>-->
-        <form method="POST" action="{{ route('authUser') }}">
-            <label for='email' class='required innerLabel'>Email</label><br>
-            <input type='text' name="email" placeholder='' size='50' class='std-field-width' required/> <br>
-            <label for='password' class='required innerLabel'>Password</label><br>        
-            <input type='password' name="password" placeholder='' size='50' class='std-field-width' required/> <br><br>
-            <input type='submit' value="Login" class="three-d-button" style="line-height: 38px; font-size: 28px; margin:0 auto; display: block; margin-top: 20px; border-color:white; border-width: thin;"/>
-            <!--<input type='button' style='display:inline-block; float:right;' formaction="{{ route('dashboard') }}" value="Cancel"/>-->
-        </form>
-    </div>
-    @csrf
-
-@stop
+    </body>
+</html>
