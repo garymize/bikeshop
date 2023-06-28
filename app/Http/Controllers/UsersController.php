@@ -181,8 +181,7 @@ class UsersController extends Controller
     
     function validateEmail(Request $request, $email){
         
-        
-        
+        return view('auth.verify-email');
         
     }
 
