@@ -57,7 +57,7 @@ Route::get('/user/add/',[UsersController::class, 'new'])->name('new-add');
     Route::post('user/update',[UsersController::class, 'update'])->name('updateUser');
     Route::get('user/show/{email}',[UsersController::class, 'show'])->name('showUser');
     Route::get('user/edit/{email}',[UsersController::class, 'edit'])->name('userEdit');
-    Route::get('user/validate-email/{email}',[UsersController::class, 'validateE,mail'])->name('userValidateEmail');
+    Route::get('user/validate-email/{email}',[UsersController::class, 'validateEmail'])->name('userValidateEmail');
     Route::get('user/changepw/{email}',[UsersController::class, 'changePW'])->name('userChangePW')->middleware('auth');
     Route::post('user/updatenewpw/{email}',[UsersController::class, 'updateNewPW'])->name('userUpdateNewPW');
 //});
