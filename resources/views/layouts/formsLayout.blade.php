@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>@yield('title')</title>
-        @include('view.components.favicon') 
+        @include('components.favicon') 
 
         <!-- Fonts -->
         <!--<link rel="preconnect" href="https://fonts.bunny.net">-->
