@@ -1,1 +1,1 @@
-{!! Html::favicon('public/images/favicon.ico') !!}
+<link rel="icon" type="image/x-icon" href="/images/favicon.webp">
