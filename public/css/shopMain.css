@@ -127,7 +127,7 @@ input[type=text], input[type=password], input[type=tel], select
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
     line-height: 31px;
-    border-width: thin; 
+    border-width: thin;
 }
 
 .std-field-width {
