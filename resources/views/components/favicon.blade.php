@@ -1,0 +1,1 @@
+{!! Html::favicon('public/images/favicon.ico') !!}
