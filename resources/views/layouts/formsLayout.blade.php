@@ -1,9 +1,3 @@
-<?php
-    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-    header("Cache-Control: post-check=0, pre-check=0", false);
-    header("Pragma: no-cache");
-?>
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }} style="--vh: 8.2px; background-color: #f7f7f7">
     <head>
@@ -29,25 +23,33 @@
         
         <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
-        <script src="/js/tooltipster.main.min.js"></script>
+<!--        <script src="/js/tooltipster.main.min.js"></script>
         <script src="/js/tooltipster.bundle.js" ></script>
-        <script src='/js/slm.js'></script>
-    <script type="text/javascript"> 
-    function display_c(){
-        var refresh=1000; // Refresh rate in milli seconds
-        mytime=setTimeout('display_ct()',refresh)
-    }
+        <script src='/js/slm.js'></script>-->
+    <script> 
+        
+        function display_c(){
+            var refresh=1000; // Refresh rate in milli seconds
+            mytime=setTimeout('display_ct()',refresh)
+        }
 
-    function display_ct() {
-        var x = new Date().toLocaleTimeString();
-        document.getElementById('ct').innerHTML = x;
-        display_c();
-    }
+        function display_ct() {
+            var x = new Date().toLocaleTimeString();
+            document.getElementById('ct').innerHTML = x;
+            display_c();
+        }
+    
+        // Simulate click function
+        function clickButton() {
+            console.log('click');
+            document.querySelector('#email').click();
+        }
+
     </script>
     </head>
-    <div class='mm-title-logo' style='width: 386px;'><img src='/images/dhc-logo.webp' width='35px'/><span style='color:#A80000'> Devils Head Choppers</span></div>
-    <div class='mm-header-date'><p style='color:dimgray; padding-right: 5px'>{{ prettyDateTime() }} - <span id='ct' ></span></p></div>
-    <body onload=display_ct();>
+    <body onload="display_ct()">
+        <div class='mm-title-logo' style='width: 386px;'><img src='/images/dhc-logo.webp' width='35px'/><span style='color:#A80000'> Devils Head Choppers</span></div>
+        <div class='mm-header-date'><p style='color:dimgray; padding-right: 5px'>{{ prettyDateTime() }} - <span id='ct' ></span></p></div>
         <div class='mm-container'>
             <div name="canvas" class="mm-canvas" @yield('mm-canvasColor','')>
                 <div class='mm-center mm-header'>
