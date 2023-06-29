@@ -12,7 +12,7 @@
 
 @section('mm-content')
 
-    <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
+    <div>
         <div style='text-align: center; margin-bottom: 20px;'>
             <a href="/">
                 <img src='/images/dhc-logo.webp' width="150px"/>
