@@ -146,10 +146,10 @@ input[type=text], input[type=password], input[type=tel], select
 }
 
 button, [type=button], [type=submit] {
-    line-height: 20px;
-    font-size: 13px;
+    line-height: 31px;
+    font-size: 20px;
 }
-
+    
 .login-button {
     -webkit-justify-content: center;
     line-height: 47px;
