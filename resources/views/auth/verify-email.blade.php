@@ -1,12 +1,12 @@
 <x-guest-layout>
     <div style='margin-bottom: 20px;'>
         <div style='font-size: 18px;'>
-            {{ __('Email Sent: Please Verify your Email Adress') }}
+            {{ __('Email Sent: Please Verify your Email Address ( may need to check the Junk Mail folder ).') }}
         </div>
 
         @if (session('status') == 'verification-link-sent')
             <div style='font-size: 18px;'>
-                {{ __('A new verification link has been sent to the email address you provided during registration.') }}
+                {{ __('A new verification link has been sent to the email address provided.') }}
             </div>
         @endif
     </div>
