@@ -21,7 +21,7 @@
             </div>
         </form>
 
-        <form method="POST" action="{{ route('/') }}">
+        <form method="POST" action="{{ route('home') }}">
             @csrf
             <div style='text-align: center;'>
                 <button type="submit" >
