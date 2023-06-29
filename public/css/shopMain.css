@@ -188,7 +188,7 @@ button, [type=button], [type=submit] {
     font-size: 20px;
 }
 
-red-button {
+.red-button {
     line-height: 38px; 
     font-size: 28px; 
     margin:0 auto; 
