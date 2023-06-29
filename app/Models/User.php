@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 //use \App\Traits\Encryptable;
 use Illuminate\Support\Facades\Crypt;
 
-class User extends Model
+class User extends Authenticatable
 {
     use HasFactory;
 //    use Encryptable;
