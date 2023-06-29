@@ -21,12 +21,13 @@
             </div>
         </form>
 
-        <form method="POST" action="{{ route('logout') }}">
+        <form method="POST" action="{{ route('/') }}">
             @csrf
-
-            <button type="submit" >
-                {{ __('Log Out') }}
-            </button>
+            <div style='text-align: center;'>
+                <button type="submit" >
+                    {{ __('Home') }}
+                </button>
+            </div>
         </form>
     </div>
 </x-guest-layout>
