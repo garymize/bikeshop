@@ -182,6 +182,21 @@ button, [type=button], [type=submit] {
   transition: all .1s ease;
 }
 
+.verify-email-button {
+    line-height: 39px;
+    width: 255px;
+    font-size: 20px;
+}
+
+red-button {
+    line-height: 38px; 
+    font-size: 28px; 
+    margin:0 auto; 
+    display: block; 
+    margin-top: 20px; 
+    border-color:white; 
+    border-width: thin;
+}
 .mm-header {
     min-height: 50px;
     width: 100%;    font-size: 24px;
