@@ -36,10 +36,12 @@
         <input type='text' autocomplete="off" value="{{ $data->email }}" name="email" placeholder='' size='50' class='std-field-width inputDisabled' disabled="true"/> <br>
         <label for='phone' class='innerLabel'>Phone</label><br>        
         <input type='text' autocomplete="off" value="{{ phoneFormat($data->phone) }}" name="phone" placeholder='' size='50' class='std-field-width inputDisabled' readonly/> <br><br>
-        <input type='button' style='display:inline-block; float:left; margin-right:10px;' onclick="window.location='{{ route('userEdit', $data->email) }}'" value="Edit"/>
-        <input type='button' style='display:inline-block; float:left; margin-right:10px;' onclick="window.location='{{ route('userChangePW',$data->email) }}'" value="Change PW"/>
-        <input type='button' style='display:inline-block; float:left;' onclick="window.location='{{ route('userValidateEmail',$data->email) }}'" value="Validate Email"/>
-        <input type='button' style='display:inline-block; float:right;' onclick="window.location='{{ route("home") }}'" value="Cancel"/>
+        <div>
+            <input type='button' style='display:inline-block; float:left; margin-right:10px;' onclick="window.location='{{ route('userEdit', $data->email) }}'" value="Edit"/>
+            <input type='button' style='display:inline-block; float:left; margin-right:10px;' onclick="window.location='{{ route('userChangePW',$data->email) }}'" value="Change PW"/>
+            <input type='button' style='display:inline-block; float:left;' onclick="window.location='{{ route('userValidateEmail',$data->email) }}'" value="Validate Email"/>
+            <input type='button' style='display:inline-block; float:right;' onclick="window.location='{{ route("home") }}'" value="Cancel"/>
+        </div>
     </div>
     @csrf
 
