@@ -233,11 +233,11 @@ button, [type=button], [type=submit] {
     width: calc(100vw - 1px);
     width: -webkit-calc(100vw - -1px);
     background-color: dimgray;
-    min-height: 700px;
+    /*min-height: 700px;*/
     /* max-height: 850px; */
     max-height: 1500px;
     /*min-height: 801px;*/
-    height: 700px;
+    height: 645px;
     /* height: 64vw; */
     border: 1px solid gray;
     padding-right: 0px;
