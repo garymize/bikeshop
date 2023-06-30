@@ -237,7 +237,7 @@ button, [type=button], [type=submit] {
     /* max-height: 850px; */
     max-height: 1500px;
     /*min-height: 801px;*/
-    height: 600px;
+    min-height: 600px;
     /* height: 64vw; */
     border: 1px solid gray;
     padding-right: 0px;
