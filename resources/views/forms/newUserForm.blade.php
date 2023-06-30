@@ -33,8 +33,8 @@
             <input type='text' name="email" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='phone' class='required innerLabel'>Phone</label><br>        
             <input type='tel' name="phone" placeholder='' size='50' class='std-field-width' required/> <br><br>
-            <div style='padding-bottom: 16px;'>
-                <input type='submit' class='three-d-button ' style='display: inline-block;float: left;line-height: 23px;font-size: 28px;width: 190px;height: 52px;margin: 0 auto;' value="Create User"/>
+            <div style='padding-bottom: 20px;'>
+                <input type='submit' class='three-d-button ' style='display: inline-block;float: left;line-height: 23px;font-size: 28px;width: 184px;height: 46px;margin: 0 auto;' value="Create User"/>
             </div>
             <input type='button' style='display:inline-block; float:right;' formaction="{{ route('dashboard') }}" value="Cancel"/>
         </form>
