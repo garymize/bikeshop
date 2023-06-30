@@ -1,6 +1,6 @@
 @extends('layouts.formsLayout') 
 
-@section('title', 'New User Form')
+@section('title', 'Create New User')
 
 @section('mm-header')
     <div>Create New User</div>
@@ -33,7 +33,7 @@
             <input type='text' name="email" placeholder='' size='50' class='std-field-width' required/> <br>
             <label for='phone' class='required innerLabel'>Phone</label><br>        
             <input type='tel' name="phone" placeholder='' size='50' class='std-field-width' required/> <br><br>
-            <input type='submit' style='display:inline-block; float:left;' value="Create User"/>
+            <input type='submit' class='.three-d-button ' style='display:inline-block; float:left;' value="Create User"/>
             <input type='button' style='display:inline-block; float:right;' formaction="{{ route('dashboard') }}" value="Cancel"/>
         </form>
     </div>
