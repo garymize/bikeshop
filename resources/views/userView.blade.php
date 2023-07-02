@@ -38,7 +38,7 @@
         <input type='text' autocomplete="off" value="{{ phoneFormat($data->phone) }}" name="phone" placeholder='' size='50' class='std-field-width inputDisabled' readonly/> 
         <br><br><br>
         <div style='text-align: center;'>
-            <input type='button' style='display:inline-block; margin-right:10px; margin-bottom: 10px;' onclick="window.location='{{ route('userEdit', $data->email) }}'" value="Edit"/>
+            <input type='button' class='three-d-button' style='display:inline-block; margin-right:10px; margin-bottom: 10px;' onclick="window.location='{{ route('userEdit', $data->email) }}'" value="Edit"/>
             <input type='button' style='display:inline-block; margin-right:10px margin-bottom: 10px;;' onclick="window.location='{{ route('userChangePW',$data->email) }}'" value="Change PW"/>
             <input type='button' style='display:inline-block; margin-bottom: 10px;' onclick="window.location='{{ route('userValidateEmail',$data->email) }}'" value="Validate Email"/>
             <input type='button' style='display:inline-block; margin-bottom: 10px;' onclick="window.location='{{ route("home") }}'" value="Cancel"/>
