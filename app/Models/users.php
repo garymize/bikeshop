@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 //use \App\Traits\Encryptable;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Auth\Authenticatable as AuthenticableTrait;
 
 class users extends \Eloquent implements Authenticatable
 {
