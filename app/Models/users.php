@@ -13,7 +13,7 @@ class users extends Model
 //    use Encryptable;
     
     protected $table = 'users';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'email';
     
     public function setpasswordAttribute($value)
     {
