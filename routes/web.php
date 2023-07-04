@@ -21,7 +21,7 @@ use App\Http\Controllers\LoginController;
 require __DIR__.'/auth.php';
 
 //Route::post('/userAuth',[UsersController::class, 'userAuth'])->name('authUser');
-Route::post('/userAuth',[LoginController::class,'authenticate'])->name('authUser');
+Route::post('/userAuthx',[LoginController::class,'authenticate'])->name('authUser');
 
 Route::match(['get','post'],'/userLogin', function () {
     return view('forms.login');
