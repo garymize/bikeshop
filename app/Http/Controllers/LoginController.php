@@ -24,8 +24,6 @@ class LoginController extends Controller
             'password' => ['required'],
         ]);
  
-        return redirect()->intended('dashboard');
-        
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
  
@@ -41,7 +39,7 @@ class LoginController extends Controller
         Log::info('login password: '.$request->password);
         
         return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
+            'email' => 'The provided credentials do not match our recordsxx.',
         ])->onlyInput('email');
     }
 }
