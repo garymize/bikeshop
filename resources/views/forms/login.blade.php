@@ -18,6 +18,7 @@
         </div>
     @endif
 
+    {{ debug_to_console(route('authUser')) }}
 
     <div>
         <!--<form action='/user/store' method='post'>-->
