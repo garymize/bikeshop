@@ -37,9 +37,11 @@ class LoginController extends Controller
         Log::info('login fail');
         Log::info('login email: '.$request->email);
         Log::info('login password: '.$request->password);
+        $result = = Auth::attempt($credentials);
+        Log::info('Result: '.Auth::attempt($credentials));
         
         return back()->withErrors([
-            'email' => 'The provided credentials do not match our recordsxx.',
+            'email' => 'The provided credentials do not match our records.',
         ])->onlyInput('email');
     }
 }
