@@ -22,6 +22,7 @@
     <div>
         <!--<form action='/user/store' method='post'>-->
         <form method="POST" action="{{ route('authUser') }}" autocomplete="off">
+            @csrf
             <label for='email' class='required innerLabel'>Email</label><br>
             <input id="email" type='text' name="email" placeholder='' size='50' class='std-field-width' autocomplete="off" required/> <br>
             <label for='password' class='required innerLabel'>Password</label><br>        
@@ -30,6 +31,5 @@
             <!--<input type='button' style='display:inline-block; float:right;' formaction="{{ route('dashboard') }}" value="Cancel"/>-->
         </form>
     </div>
-    @csrf
 
 @stop
