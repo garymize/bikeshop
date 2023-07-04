@@ -37,7 +37,7 @@ class LoginController extends Controller
         Log::info('login fail');
         Log::info('login email: '.$request->email);
         Log::info('login password: '.$request->password);
-        $result = = Auth::attempt($credentials);
+        $result = Auth::attempt($credentials);
         Log::info('Result: '.Auth::attempt($credentials));
         
         return back()->withErrors([
