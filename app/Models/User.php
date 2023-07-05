@@ -18,7 +18,6 @@ class User extends  \Eloquent implements Authenticatable
     
     protected $table = 'users';
     protected $primaryKey = 'id';
-    protected $name = 'name';
     
     public function setpasswordAttribute($value)
     {
