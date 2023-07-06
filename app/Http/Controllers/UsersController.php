@@ -91,10 +91,10 @@ class UsersController extends Controller
     {
         Log::info('$email: '.$email);
 //        $user = User::where('email',$email)->firstOrFail();
-        $user = User::where('email',$email)->get();
+        $user = User::where('email',$email)->get()->firstOrFail();
         Log::info('$user: '.$user);
 //        return view('userView',['data'=>$user]);
-        return $user['name'];
+        return $user;
     }
 
     public function edit($email)
