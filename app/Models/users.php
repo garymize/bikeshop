@@ -15,6 +15,7 @@ class users extends \Eloquent implements Authenticatable
 //    use Encryptable;
     use AuthenticableTrait;
     
+    public $incrementing = false;
     protected $table = 'users';
     protected $primaryKey = 'email';
     
