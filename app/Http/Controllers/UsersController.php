@@ -52,7 +52,6 @@ class UsersController extends Controller
         $user->lastname  = trim($request['lastname']);
         $user->password  = trim($request['password']);
         $user->email     = trim($request['email']);
-        $user->email-verified-at = 
         $user->phone     = trim(cleanPhone($request['phone']));
         $user->save();
         
