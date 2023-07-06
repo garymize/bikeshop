@@ -169,12 +169,12 @@ class UsersController extends Controller
         ]);
         
         $user = users::where('email',$request['email'])->firstOrFail();
-        $user->name      = trim($request['firstname'].' '.$request['lastname']);
-        $user->firstname = trim($request['firstname']);
-        $user->lastname  = trim($request['lastname']);
+//        $user->name      = trim($request['firstname'].' '.$request['lastname']);
+//        $user->firstname = trim($request['firstname']);
+//        $user->lastname  = trim($request['lastname']);
 //        $user->password  = $request['password'];
-        $user->email     = trim($request['email']);
-        $user->phone     = trim(cleanPhone($request['phone']));
+//        $user->email     = trim($request['email']);
+//        $user->phone     = trim(cleanPhone($request['phone']));
         $user->save();
         
         $route = route('showUser',$request['email']);
