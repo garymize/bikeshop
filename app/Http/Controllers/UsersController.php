@@ -89,7 +89,7 @@ class UsersController extends Controller
     public function show(Request $request, $email)
     {
         $user = users::where('email',$email)->firstOrFail();
-        Log::info('$user: '.$user');
+        Log::info('$user: '.$user);
         return view('userView',['data'=>$user]);
     }
 
