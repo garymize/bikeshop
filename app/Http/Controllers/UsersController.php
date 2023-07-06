@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateusersRequest;
 use App\Models\users;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class UsersController extends Controller
 {
@@ -88,7 +89,7 @@ class UsersController extends Controller
     public function show($email)
     {
         $user = users::where('email',$email)->firstOrFail();
-        Log::info($user);
+        Log::info('$user: '.$user);
         return view('userView',['data'=>$user]);
     }
 
