@@ -18,7 +18,7 @@
         </div>
     @endif
 
-    {{ debug_to_console(route('authUser')) }}
+    {{ debug_to_console('login.blade.php: '.route('authUser')) }}
 
     <div>
         <!--<form action='/user/store' method='post'>-->
