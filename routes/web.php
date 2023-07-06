@@ -4,7 +4,6 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-use App\Http\Middleware\EnsureEmailIsVerified;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,7 +55,7 @@ Route::get('/user/add/',[UsersController::class, 'new'])->name('new-add');
     Route::get('user/create',[UsersController::class, 'create'])->name('createUser');
     Route::post('user/store',[UsersController::class, 'store'])->name('storeUser');
     Route::post('user/update',[UsersController::class, 'update'])->name('updateUser');
-    Route::get('user/show/{email}',[UsersController::class, 'show'])->name('showUser')->EnsureEmailIsVerified();
+    Route::get('user/show/{email}',[UsersController::class, 'show'])->name('showUser')->middleware(['auth', 'verified']);
     Route::get('user/edit/{email}',[UsersController::class, 'edit'])->name('userEdit');
     Route::get('user/validate-email/{email}',[UsersController::class, 'validateEmail'])->name('userValidateEmail');
     Route::get('user/changepw/{email}',[UsersController::class, 'changePW'])->name('userChangePW')->middleware('auth');
