@@ -94,7 +94,7 @@ class UsersController extends Controller
         $user = User::where('email',$email)->get();
         Log::info('$user: '.$user);
 //        return view('userView',['data'=>$user]);
-        return var_dump($user);
+        return $user->email;
     }
 
     public function edit($email)
