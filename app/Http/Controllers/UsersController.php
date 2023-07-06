@@ -177,7 +177,7 @@ class UsersController extends Controller
 //        $user->phone     = trim(cleanPhone($request['phone']));
         //$user->save();
         
-        ÷$route = route('showUser',$request['email']);
+        //$route = route('showUser',$request['email']);
         $route = route('dashboard',$request['email']);
         
 //        return view('profile.partials.userCreated');
