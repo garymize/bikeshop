@@ -23,6 +23,7 @@
     <div>
         <!--<form action='/user/store' method='post'>-->
         <form method="POST" action="{{ route('authUser') }}" autocomplete="off">
+            {{ debug_to_console('login.blade.php: '.route('authUser')) }}
             @csrf
             <label for='email' class='required innerLabel'>Email</label><br>
             <input id="email" type='text' name="email" placeholder='' size='50' class='std-field-width' autocomplete="off" required/> <br>
