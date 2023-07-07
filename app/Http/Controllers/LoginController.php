@@ -24,7 +24,7 @@ class LoginController extends Controller
             'password' => ['required'],
         ]);
  
-        debug_to_console('$credentials: '.$credentials);
+        debug_to_console('$credentials: '.$credentials['email'].' '.$credentials['password']);
         
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
