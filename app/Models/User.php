@@ -22,17 +22,18 @@ class User extends  \Eloquent implements Authenticatable
     
     public function setpasswordAttribute($value)
     {
-        $this->attributes['password'] = Crypt::encryptString($value);
+        //$this->attributes['password'] = Crypt::encryptString($value);
+        $this->attributes['password'] = password_hash($string, PASSWORD_DEFAULT);
     }
     
-    public function getpasswordAttribute($value)
-    {
-        try {
-            return Crypt::decryptString($value);
-        } catch (\Exception $e) {
-            return $value;
-        }
-    }
+//    public function getpasswordAttribute($value)
+//    {
+//        try {
+//            return Crypt::decryptString($value);
+//        } catch (\Exception $e) {
+//            return $value;
+//        }
+//    }
     
 //    protected $encryptable = [
 //        'password'

@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,10 +21,18 @@ use App\Http\Controllers\LoginController;
 
 require __DIR__.'/auth.php';
 
+
 //Route::post('/userAuth',[UsersController::class, 'userAuth'])->name('authUser');
 Route::post('/userAuth',[LoginController::class,'authenticate'])->name('authUser');
 
-Route::match(['get','post'],'/userLogin', function () {
+Route::get('/userLogin', function () {
+    if (Auth::check()){
+        return redirect('/dashboard');
+    }
+    return view('forms.login');
+});
+
+Route::post('/userLogin', function () {
     return view('forms.login');
 })->name('userLogin');
 
@@ -42,7 +51,7 @@ Route::get('/home', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->name('dashboard');
+})->middleware('auth')->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -67,3 +76,49 @@ Route::get('/user/add/',[UsersController::class, 'new'])->name('new-add');
 //});
 
 //Route::get('user/changepw/{email}',[UsersController::class, 'changePW'])->name('userChangePW')->middleware('auth');
+    
+    
+    Route::get('checkpw', function(Request $request) {
+
+    $pw = $request->input('pw');
+    $hash = $request->input('hash');
+    
+    if (password_verify($pw, $hash)) {
+        $result = 'Password is valid!';
+    } else {
+        $result = 'Invalid password.'.' pw: '.$pw.' hash:'.$hash;
+    }
+    
+    return $result;
+    
+    })->name('checkPW');
+
+    Route::get('hash-string', function(Request $request) {
+
+        $string = $request->input('string');
+
+        //return Crypt::encryptString($string);
+        return password_hash($string, PASSWORD_DEFAULT);
+
+    })->name('hashString');
+
+    //Route::get('check-password', function(Request $request) {
+    //
+    //    $string = $request->input('string');
+    //    $hashString = $request->input('hashString');
+    //    
+    //    return (password_verify($string,$hashString) ? 'TRUE' : 'FALSE' );
+    //    
+    //})->name('checkPassword');
+
+    Route::POST('check-password', function(Request $request) {
+
+        $passwordString = $request->input('string');
+        $hashString = $request->input('hashString');
+        if ($passwordString === Crypt::decryptString($hashString)) {
+            return 'TRUE';
+        }
+
+        return 'FALSE';
+
+    })->name('checkPassword');
