@@ -158,6 +158,19 @@ button, [type=button], [type=submit] {
     line-height: 31px;
     font-size: 20px;
 }
+
+.name-button {
+    font-size: 15px;
+    float: right;
+    display: inline;
+    border: solid thin darkgray;
+    background-color: white;
+    min-width: 95px;
+}
+
+.name-button:hover  {
+    background-color: lightgray;
+}
     
 .login-button {
     -webkit-justify-content: center;

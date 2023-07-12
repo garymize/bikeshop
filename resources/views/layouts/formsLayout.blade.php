@@ -48,25 +48,35 @@
 
     </script>
     </head>
+    <!--Body-->
     <body onload="display_ct()">
+        <!--Logo-->
         <div class='mm-title-logo' style='width: 386px;'><img src='/images/dhc-logo.webp' width='35px'/><span style='color:#A80000'> Devils Head Choppers</span></div>
+        <!--Date/Time-->
         <div class='mm-header-date'><p style='color:dimgray; padding-right: 5px'>{{ prettyDateTime() }} - <span id='ct' ></span></p></div>
+        <!--menu bar-->
         <div style="border-top: solid thin;
                     min-height: 20px;
                     padding: 0px;
                     display: inline-block;
                     width: 100%;">
-            <input type="button" style="font-size: 15px;
-                        float: right; 
-                        display: inline;
-                        border: none;"
-                value="{{ (isset(Auth::user()->name)) ? Auth::user()->name : '' }}" />
+            <input type="button" class="name-button"
+                value="{{ (isset(Auth::user()->name)) ? "Logout" : '' }}" />
+            <!--Name Button-->
+            <input type="button" class="name-button"
+                value="{{ (isset(Auth::user()->name)) ? Auth::user()->name : "Profile" }}" />
+            <!--Hamburger-->
+            <a href="page.html"><img src="images/hamburger.png" style="height: 33px;"></a>
         </div>
+        <!--Container-->
         <div class='mm-container'>
+            <!--Canvas-->
             <div name="canvas" class="mm-canvas" @yield('mm-canvasColor','')>
+                <!--Standard Header-->
                 <div class='mm-center mm-header'>
                     @yield('mm-header')
                 </div>
+                <!--Content-->
                 <div>
                     @yield('mm-content')
                 </div>
