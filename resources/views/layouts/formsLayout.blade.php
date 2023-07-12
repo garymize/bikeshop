@@ -60,13 +60,13 @@
                     padding: 0px;
                     display: inline-block;
                     width: 100%;">
-            <input type="button" class="name-button"
+            <input type="button" class="name-button" style="float: right;"
                 value="{{ (isset(Auth::user()->name)) ? "Logout" : '' }}" />
             <!--Name Button-->
-            <input type="button" class="name-button"
+            <input type="button" class="name-button" style="float: right;"
                 value="{{ (isset(Auth::user()->name)) ? Auth::user()->name : "Profile" }}" />
             <!--Hamburger-->
-            <a href="page.html"><img src="images/hamburger.png" style="height: 33px;"></a>
+            <a href="page.html"><img src="images/hamburger.png" style="height: 33px; float: left;"></a>
         </div>
         <!--Container-->
         <div class='mm-container'>
