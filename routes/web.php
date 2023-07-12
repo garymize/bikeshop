@@ -5,6 +5,8 @@ use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,7 +52,9 @@ Route::get('/home', function () {
 //})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $email = Auth::user()->email;
+    $user = User::where('email',$email)->get()->firstOrFail();
+    return view('dashboard',['data'=>$user]);
 })->middleware('auth')->name('dashboard');
 
 Route::middleware('auth')->group(function () {

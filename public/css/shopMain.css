@@ -79,7 +79,7 @@ body,table,td,th,input,textarea,select
 .mm-header-date {
     float: right;
     display: inline-block;
-    top: -27px;
+    top: -18px;
     position: relative;
     font-size: 18px;
 }
