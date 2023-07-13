@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
         <title>@yield('title')</title>
         @include('components.favicon')
 
@@ -60,8 +60,12 @@
                     padding: 0px;
                     display: inline-block;
                     width: 100%;">
-            <input type="button" class="name-button" style="float: right;"
-                value="{{ (isset(Auth::user()->name)) ? "Logout" : '' }}" />
+            <!--Logout Button-->
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <input type="submit" class="name-button" style="float: right;"
+                    value="{{ (isset(Auth::user()->name)) ? "Logout" : '' }}" />
+            </form>
             <!--Name Button-->
             <input type="button" class="name-button" style="float: right;"
                 value="{{ (isset(Auth::user()->name)) ? Auth::user()->name : "Profile" }}" />
