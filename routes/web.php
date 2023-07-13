@@ -68,16 +68,17 @@ Route::get('/userform/show/',[UsersController::class, 'show'])->name('show-user'
 Route::get('/user/new/',[UsersController::class, 'new'])->name('new-user');
 Route::get('/user/add/',[UsersController::class, 'new'])->name('new-add');
 
-//Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth'])->group(function () {
     Route::get('user/create',[UsersController::class, 'create'])->name('createUser');
     Route::post('user/store',[UsersController::class, 'store'])->name('storeUser');
     Route::post('user/update',[UsersController::class, 'update'])->name('updateUser');
-    Route::get('user/show/{email}',[UsersController::class, 'show'])->name('showUser');
+    Route::get('user/show/{email}',[UsersController::class, 'show']);
+    Route::post('user/show/{email}',[UsersController::class, 'show'])->name('showUser');
     Route::get('user/edit/{email}',[UsersController::class, 'edit'])->name('userEdit');
     Route::get('user/validate-email/{email}',[UsersController::class, 'validateEmail'])->name('userValidateEmail');
     Route::get('user/changepw/{email}',[UsersController::class, 'changePW'])->name('userChangePW')->middleware('auth');
     Route::post('user/updatenewpw/{email}',[UsersController::class, 'updateNewPW'])->name('userUpdateNewPW');
-//});
+});
 
 //Route::get('user/changepw/{email}',[UsersController::class, 'changePW'])->name('userChangePW')->middleware('auth');
     

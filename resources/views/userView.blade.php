@@ -1,6 +1,6 @@
 @extends('layouts.formsLayout') 
 
-@section('title', 'View User')
+@section('title', 'User Profile')
 
 @section('mm-header')
     <div>View User</div>

@@ -67,8 +67,10 @@
                     value="{{ (isset(Auth::user()->name)) ? "Logout" : '' }}" />
             </form>
             <!--Name Button-->
-            <input type="button" class="name-button" style="float: right;"
-                value="{{ (isset(Auth::user()->name)) ? Auth::user()->name : "Profile" }}" />
+            <form method="POST" action="{{ route('showUser',(isset(Auth::user()->email)) ? Auth::user()->email : '') }}">
+                <input type="submit" class="name-button" style="float: right;"
+                    value="{{ (isset(Auth::user()->name)) ? Auth::user()->name : "Profile" }}" />
+            </form>
             <!--Hamburger-->
             <a href="page.html"><img src="images/hamburger.png" style="height: 33px; float: left;"></a>
         </div>
