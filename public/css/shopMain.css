@@ -172,7 +172,7 @@ button, [type=button], [type=submit] {
     background-color: lightgray;
 }
 
-@media (max-width 767){
+@media (max-width: 767){
     .name-button:hover  {
         background-color: lightgray;
     }
