@@ -19,11 +19,15 @@
         <link rel="stylesheet" type="text/css" href="/css/shopMain.css" />
         <!--<link rel="stylesheet" type="text/css" href="/css/slm.css" />-->
         <!--<link rel="stylesheet" type="text/css" href="/css/igsDialog.css" />-->
+        <link rel='stylesheet' type='text/css' href='/keypad/jquery.keypad.css' />
+        <!--<script src="/path/to/cdn/jquery.slim.min.js"></script>-->
+        <!--<script src="/path/to/jquery.keypad.js"></script>-->
         
         <!-- Scripts -->
         
         <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+        <script src='/keypad/jquery.keypad.js'></script>
 <!--        <script src="/js/tooltipster.main.min.js"></script>
         <script src="/js/tooltipster.bundle.js" ></script>
         <script src='/js/slm.js'></script>-->
@@ -46,6 +50,14 @@
             document.querySelector('#email').click();
         }
 
+        @if (Auth::check()) 
+            var timeout = ({{config('session.lifetime')}} * 60000) -10 ;
+            setTimeout(function(){
+                window.location.reload(1);
+            },  timeout);
+
+        @endif
+                
     </script>
     </head>
     <!--Body-->
@@ -62,17 +74,24 @@
                     width: 100%;">
             <!--Logout Button-->
             <form method="POST" action="{{ route('logout') }}">
-                @csrf
                 <input type="submit" class="name-button" style="float: right;"
                     value="{{ (isset(Auth::user()->name)) ? "Logout" : '' }}" />
             </form>
             <!--Name Button-->
-            <form method="POST" action="{{ route('showUser',(isset(Auth::user()->email)) ? Auth::user()->email : '') }}">
+            <form method="POST" action="{{ route('showUser') }}">
+                <input type='hidden' id='user-email' name='user-email' value='{{ (isset(Auth::user()->email)) ? Auth::user()->email : "" }}'>
                 <input type="submit" class="name-button" style="float: right;"
                     value="{{ (isset(Auth::user()->name)) ? Auth::user()->name : "Profile" }}" />
             </form>
             <!--Hamburger-->
-            <a href="page.html"><img src="images/hamburger.png" style="height: 33px; float: left;"></a>
+            <a href="page.html"><img src="/images/hamburger.png" style="height: 33px; float: left; margin-right: 20px; margin-left: 20px;"></a>
+            <!--Lock Button-->
+            <form method="GET" action="{{ route('lock') }}">
+                @csrf
+                <input type='hidden' id='lock-email' name='lock-email' value='{{ (isset(Auth::user()->email)) ? Auth::user()->email : "" }}'>
+                <input type="submit" id='lock-button' class="name-button" style="float: left;"
+                    value="Lock" />
+            </form>
         </div>
         <!--Container-->
         <div class='mm-container'>

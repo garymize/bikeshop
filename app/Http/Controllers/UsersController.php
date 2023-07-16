@@ -87,12 +87,10 @@ class UsersController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Request $request, $email)
+    public function show(Request $request)
     {
-        Log::info('$email: '.$email);
-//        $user = User::where('email',$email)->firstOrFail();
+        $email = $request['user-email'];
         $user = User::where('email',$email)->get()->firstOrFail();
-        Log::info('$user: '.$user);
         return view('userView',['data'=>$user]);
     }
 

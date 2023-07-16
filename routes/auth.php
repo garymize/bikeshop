@@ -21,7 +21,7 @@ Route::middleware('guest')->group(function () {
                 ->name('login');
 
     Route::post('login', [AuthenticatedSessionController::class, 'store']);
-
+    
     Route::get('forgot-password', [PasswordResetLinkController::class, 'create'])
                 ->name('password.request');
 
@@ -59,3 +59,17 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
                 ->name('logout');
 });
+
+
+//    Route::get('applock', [AuthenticatedSessionController::class, 'lock'])
+//                ->name('lockApp');
+//
+//    Route::get('appunlock', [AuthenticatedSessionController::class, 'unlock'])
+//                ->name('unlockApp');
+
+    Route::get('lock', [AuthenticatedSessionController::class, 'lock'])
+                ->name('lock');
+    
+    Route::get('unlock', [AuthenticatedSessionController::class, 'unlock'])
+                ->name('unlock');
+
