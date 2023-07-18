@@ -26,6 +26,7 @@
         });
         $(function(){
             $('#canvas').css('width','267');
+            $('#canvas').css('text-align','center');
         });
     </script>
     
