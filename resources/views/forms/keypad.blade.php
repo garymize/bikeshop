@@ -28,9 +28,7 @@
             <input type="password" class="keypad" disabled="disabled" />        </form>
             <div id="keypad">
                 <div id="keypad" class="keypad">
-                    <button class="number">1</button>
-                    <button class="number">2</button>
-                    <button class="number">3</button>
+                    <button class="number">1</button><button class="number">2</button><button class="number">3</button>
                     <button class="number">4</button>
                     <button class="number">5</button>
                     <button class="number">6</button>
