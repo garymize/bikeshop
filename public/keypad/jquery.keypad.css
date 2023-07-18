@@ -1,11 +1,18 @@
-.keypad  button {
-    margin: 1%;
+.keypad  buttonx {
+/*    margin: 1%;
     width: 31%;
     height: 23%;
     background: #eee;
     border: 2px solid black;
     border-radius: 10px;
-    font-size: 3em;
+    font-size: 3em;*/
+    margin: 1%;
+    width: 23%;
+    height: 23%;
+    background: #eee;
+    border: thin solid black;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 .keypad  button.delete,

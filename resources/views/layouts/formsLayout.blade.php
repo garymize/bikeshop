@@ -22,6 +22,7 @@
         <link rel='stylesheet' type='text/css' href='/keypad/jquery.keypad.css' />
         <!--<script src="/path/to/cdn/jquery.slim.min.js"></script>-->
         <!--<script src="/path/to/jquery.keypad.js"></script>-->
+        <link rel='stylesheet' type='text/css' src='/keypad/jquery.keypad.css' />
         
         <!-- Scripts -->
         
