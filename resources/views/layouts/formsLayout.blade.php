@@ -97,7 +97,7 @@
         <!--Container-->
         <div class='mm-container'>
             <!--Canvas-->
-            <div name="canvas" class="mm-canvas" @yield('mm-canvasColor','')>
+            <div id='canvas' name="canvas" class="mm-canvas" @yield('mm-canvasColor','')>
                 <!--Standard Header-->
                 <div class='mm-center mm-header'>
                     @yield('mm-header')
