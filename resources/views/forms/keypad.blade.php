@@ -20,6 +20,12 @@
 
     {{ debug_to_console('login.blade.php: '.route('authUser')) }}
 
+    <script>
+        $(function(){
+          $('#keypad').keypad();
+        });
+    </script>
+    
     <div>
         <!--<form action='/user/store' method='post'>-->
         <form method="POST" action="{{ route('authUser') }}" autocomplete="off">
