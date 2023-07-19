@@ -30,6 +30,7 @@
             $('.delete').css('background', 'url("/images/backspace-black-small-2.png") no-repeat');
             $('.delete').css('height','49px' );
             $('.delete').text('');
+            $('.delete').css('border','none');
         });
     </script>
     
