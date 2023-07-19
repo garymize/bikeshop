@@ -31,6 +31,8 @@
             $('.delete').css('height','49px' );
             $('.delete').text('');
             $('.delete').css('border','none');
+            $('#keypad, .submit').css({'position':'relative','top':'-26px','height':'36px'});
+            $('#keypad, .number, :contains("0")').css({'position':'relative','top':'-25px'});
         });
     </script>
     
