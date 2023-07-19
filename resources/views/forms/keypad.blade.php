@@ -48,7 +48,7 @@
                 <button class="number">7</button>
                 <button class="number">8</button>
                 <button class="number">9</button>
-                <button class="delete">del</button>
+                <button class="delete"><img src="/images/backspace-black-small.jpeg"></button>
                 <button class="number">0</button>
                 <button class="submit">ok</button>
             </div>                
