@@ -30,7 +30,7 @@
         });
     </script>
     
-    <div style='width: 230px; `text-align: center; margin: 0;'>
+    <div style='width: 230px; text-align: center; margin: 0;'>
         <!--<form action='/user/store' method='post'>-->
         <form method="POST" action="{{ route('authUser') }}" autocomplete="off" style='184px;'>
             {{ debug_to_console('login.blade.php: '.route('authUser')) }}
