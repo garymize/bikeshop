@@ -27,6 +27,7 @@
         $(function(){
             $('#canvas').css('width','267');
             $('#canvas').css('text-align','center');
+            $('.delete').css('background-color: white;');
         });
     </script>
     
