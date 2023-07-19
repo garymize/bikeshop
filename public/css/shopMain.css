@@ -159,6 +159,11 @@ button, [type=button], [type=submit] {
     font-size: 20px;
 }
 
+.delete {
+    line-height: 31px;
+    font-size: 20px;
+}
+
 .name-button {
     font-size: 15px;
     float: right;
