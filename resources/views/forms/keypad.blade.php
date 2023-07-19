@@ -28,6 +28,8 @@
             $('#canvas').css('width','267');
             $('#canvas').css('text-align','center');
             $('.delete').css('background', 'url("/images/backspace-black-small-2.png") no-repeat');
+            $('.delete').css('height','49px' );
+            $('.delete').text('');
         });
     </script>
     
