@@ -164,14 +164,6 @@ button, [type=button], [type=submit] {
     font-size: 15px;
 }
 
-.delete {
-    background:url(/images/backspace-black-small.jpeg) no-repeat;
-    cursor:pointer;
-    width: 30px;
-    height: 20px;
-    border: none;
-}
-
 .name-button {
     font-size: 15px;
     float: right;
