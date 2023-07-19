@@ -27,7 +27,7 @@
         $(function(){
             $('#canvas').css('width','267');
             $('#canvas').css('text-align','center');
-            $('.delete').css('background', 'url("/images/backspace-black-small.png") no-repeat');
+            $('.delete').css('background', 'url("/images/backspace-black-small-2.png") no-repeat');
         });
     </script>
     
