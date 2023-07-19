@@ -159,7 +159,7 @@ button, [type=button], [type=submit] {
     font-size: 20px;
 }
 
-.delete {
+.delete, .submit {
     line-height: 31px;
     font-size: 15px;
 }
