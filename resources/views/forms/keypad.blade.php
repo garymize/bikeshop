@@ -22,7 +22,7 @@
 
     <script>
         $(function(){
-          $('#keypad').keypad();
+//          $('#keypad').keypad();
         });
         $(function(){
             $('#canvas').css('width','267');
@@ -39,7 +39,7 @@
         </form>
         <div id="keypad">
             <div id="keypad" class="keypad">
-<!--                <button class="number">1</button>
+                <button class="number">1</button>
                 <button class="number">2</button>
                 <button class="number">3</button>
                 <button class="number">4</button>
@@ -50,7 +50,7 @@
                 <button class="number">9</button>
                 <button class="delete"><img src="/images/backspace-black-small.jpeg"></button>
                 <button class="number">0</button>
-                <button class="submit">ok</button>-->
+                <button class="submit">ok</button>
             </div>                
         </div>
         <br><br>
