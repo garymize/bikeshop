@@ -27,6 +27,7 @@
         $(function(){
             $('#canvas').css('width','267');
             $('#canvas').css('text-align','center');
+            $('#canvas').css({'position':'relative','top':'30px'});
             $('.delete').css('background', 'url("/images/backspace-black-small-2.png") no-repeat');
             $('.delete').css('height','49px' );
             $('.delete').text('');
