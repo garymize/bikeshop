@@ -53,6 +53,7 @@
                 <button class="submit">ok</button>
             </div>                
         </div>
+        <br><br>
         <div style='text-align: center;'>
             <a href='{{ route('login') }}'>Password Login<a/>
         </div>
