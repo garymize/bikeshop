@@ -46,7 +46,7 @@
             @csrf
             <input type="password" class="keypad" disabled="disabled" />        
         </form>
-        <div id="keypadcontainer" style='position: relative; top: 33px;'>
+        <div id="keypadcontainer" style='position: relative; top: 10px;'>
             <div id="keypad" class="keypad">
 <!--                <button class="number">1</button>
                 <button class="number">2</button>
