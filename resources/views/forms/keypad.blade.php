@@ -29,11 +29,11 @@
             $('#canvas').css('text-align','center');
             $('#canvas').css({'position':'relative','top':'30px'});
 //            $("#keypadcontainer").css({'position':'relative','top':'33px'});
-            $('.delete').css('background', 'url("/images/backspace-black-small-2.png") 10px 10px no-repeat');
+            $('.delete').css('background', 'url("/images/backspace-black-small-2.png") 3px 1px no-repeat');
             $('.delete').css('height','51px' );
             $('.delete').text('');
             $('.delete').css('border','none');
-            $('.delete').css({'position':'relative','top':'-7px','left':'4px'});
+            $('.delete').css({'position':'relative','top':'-7px','left':'2px'});
             $('#keypad .submit').css({'position':'relative','top':'-26px','height':'36px'});
             $('button:contains("0")').css({'position':'relative','top':'-25px', 'height':'35px'});
         });
