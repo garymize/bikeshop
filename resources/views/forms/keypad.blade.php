@@ -28,8 +28,8 @@
             $('#canvas').css('width','267');
             $('#canvas').css('text-align','center');
             $('#canvas').css({'position':'relative','top':'30px'});
-            $("#keypadcontainer").cssxx({'position':'relative','top':'0px'});
-            $('.delete').cssxx('background', 'url("/images/backspace-black-small-2.png") no-repeat');
+            $("#keypadcontainer").css({'position':'relative','top':'0px'});
+            $('.delete').css('background', 'url("/images/backspace-black-small-2.png") no-repeat');
             $('.delete').css('height','49px' );
             $('.delete').text('');
             $('.delete').css('border','none');
@@ -46,7 +46,7 @@
             @csrf
             <input type="password" class="keypad" disabled="disabled" />        
         </form>
-        <div id="keypadcontainer" style='position: relative; top: 0px;'>
+        <div id="keypadcontainer">
             <div id="keypad" class="keypad">
 <!--                <button class="number">1</button>
                 <button class="number">2</button>
