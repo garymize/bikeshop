@@ -33,7 +33,7 @@
             $('.delete').css('height','51px' );
             $('.delete').text('');
             $('.delete').css('border','none');
-            $('.delete').css({'position':'relative','top':'-7px','left':'2px'});
+            $('.delete').css({'position':'relative','top':'-6px','left':'2px'});
             $('#keypad .submit').css({'position':'relative','top':'-26px','height':'36px'});
             $('button:contains("0")').css({'position':'relative','top':'-25px', 'height':'35px'});
         });
