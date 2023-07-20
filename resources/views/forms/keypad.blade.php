@@ -28,14 +28,14 @@
             $('#canvas').css('width','267');
             $('#canvas').css('text-align','center');
             $('#canvas').css({'position':'relative','top':'30px'});
-            $("#keypadcontainer").css({'position':'relative','top':'33px'});
+//            $("#keypadcontainer").css({'position':'relative','top':'33px'});
             $('.delete').css('background', 'url("/images/backspace-black-small-2.png") no-repeat');
             $('.delete').css('height','49px' );
             $('.delete').text('');
             $('.delete').css('border','none');
             $('.delete').css({'position':'relative','top':'-7px','left':'4px'});
             $('#keypad .submit').css({'position':'relative','top':'-26px','height':'36px'});
-            $(':contains("0")').css({'position':'relative','top':'-25px'});
+//            $(':contains("0")').css({'position':'relative','top':'-25px'});
         });
     </script>
     
