@@ -41,10 +41,10 @@
     
     <div style='width: 230px; text-align: center; margin: 0;'>
         <!--<form action='/user/store' method='post'>-->
-        <form method="POST" action="{{ route('authUser') }}" autocomplete="off" style='184px;'>
+        <form method="POST" action="{{ route('authUser') }}" autocomplete="off">
             {{ debug_to_console('login.blade.php: '.route('authUser')) }}
             @csrf
-            <input type="password" class="keypad" disabled="disabled" />        
+            <input type="password" class="keypad" readonly />        
         </form>
         <div id="keypadcontainer" style='position: relative; top: 10px;'>
             <div id="keypad" class="keypad">
