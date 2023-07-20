@@ -118,7 +118,7 @@ body {
 
 input[type=text], input[type=password], input[type=tel], select, x-text-input 
 {    	    	
-    background-color: #f7f7f7;
+    background-color: white;
     /*border: solid 1px lightgray;*/
     /*border-style: solid;*/
     /*border: none;*/
