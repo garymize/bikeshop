@@ -35,7 +35,7 @@
             $('.delete').css('border','none');
             $('.delete').css({'position':'relative','top':'-7px','left':'4px'});
             $('#keypad .submit').css({'position':'relative','top':'-26px','height':'36px'});
-//            $(':contains("0")').css({'position':'relative','top':'-25px'});
+            $(':contains("0")').css({'position':'relative','top':'-25px'});
         });
     </script>
     
